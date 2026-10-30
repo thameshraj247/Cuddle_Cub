@@ -158,6 +158,12 @@ button, input, select, textarea {
   position: relative;
 }
 
+section[id],
+.section[id],
+.section-tight[id] {
+  scroll-margin-top: 90px;
+}
+
 .section-tight {
   padding: 3.5rem 0;
 }
