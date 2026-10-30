@@ -7,46 +7,8 @@ function initComingSoonPage() {
     window.lucide.createIcons();
   }
 
-  initCountdown();
   initNotifyForm();
-}
-
-function initCountdown() {
-  const targetDate = new Date();
-  targetDate.setDate(targetDate.getDate() + 14);
-  targetDate.setHours(targetDate.getHours() + 8);
-  targetDate.setMinutes(targetDate.getMinutes() + 42);
-
-  const daysEl = document.getElementById('cdDays');
-  const hoursEl = document.getElementById('cdHours');
-  const minutesEl = document.getElementById('cdMinutes');
-  const secondsEl = document.getElementById('cdSeconds');
-
-  function update() {
-    const now = new Date().getTime();
-    const distance = targetDate.getTime() - now;
-
-    if (distance <= 0) {
-      if (daysEl) daysEl.textContent = '00';
-      if (hoursEl) hoursEl.textContent = '00';
-      if (minutesEl) minutesEl.textContent = '00';
-      if (secondsEl) secondsEl.textContent = '00';
-      return;
-    }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    if (daysEl) daysEl.textContent = String(days).padStart(2, '0');
-    if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
-    if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
-    if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
-  }
-
-  update();
-  setInterval(update, 1000);
+  initSubtleInteractiveMotion();
 }
 
 function initNotifyForm() {
@@ -69,6 +31,51 @@ function initNotifyForm() {
       showToast(`Welcome to the VIP Cradle List! 20% launch code sent to ${email}`);
     }
 
+    spawnCelebrationParticles(form);
     form.reset();
+  });
+}
+
+function spawnCelebrationParticles(container) {
+  const rect = container.getBoundingClientRect();
+  const centerX = rect.left + rect.width / 2;
+  const centerY = rect.top + rect.height / 2;
+
+  const icons = ['fa-leaf', 'fa-sparkles', 'fa-heart', 'fa-paw'];
+
+  for (let i = 0; i < 6; i++) {
+    setTimeout(() => {
+      const particle = document.createElement('div');
+      particle.className = 'floating-paw-particle';
+      const iconClass = icons[i % icons.length];
+      particle.innerHTML = `<i class="fas ${iconClass}"></i>`;
+
+      const angle = (Math.PI * 2 * i) / 6;
+      const radius = 25;
+      const posX = centerX + Math.cos(angle) * radius;
+      const posY = centerY + Math.sin(angle) * radius;
+
+      particle.style.left = `${posX}px`;
+      particle.style.top = `${posY}px`;
+
+      document.body.appendChild(particle);
+
+      setTimeout(() => {
+        if (particle.parentNode) {
+          particle.parentNode.removeChild(particle);
+        }
+      }, 850);
+    }, i * 70);
+  }
+}
+
+function initSubtleInteractiveMotion() {
+  const card = document.querySelector('.cs-center-card');
+  if (!card) return;
+
+  window.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 8;
+    const y = (e.clientY / window.innerHeight - 0.5) * 8;
+    card.style.transform = `translate3d(${x}px, ${y}px, 0)`;
   });
 }
