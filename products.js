@@ -44,6 +44,12 @@ function initProductsFilter() {
 
   if (searchInput) {
     searchInput.addEventListener('input', filterCards);
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialSearch = urlParams.get('search') || urlParams.get('q');
+    if (initialSearch) {
+      searchInput.value = initialSearch;
+      filterCards();
+    }
   }
 }
 

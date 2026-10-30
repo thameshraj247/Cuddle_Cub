@@ -413,6 +413,7 @@
   flex-direction: column;
   gap: 1.5rem;
   width: 100%;
+  align-self: start;
 }
 
 .faq-card {
@@ -427,6 +428,7 @@
   display: flex;
   flex-direction: column;
   height: auto;
+  align-self: stretch;
 }
 
 .faq-card:hover {
