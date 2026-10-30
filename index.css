@@ -1769,6 +1769,17 @@ text-overflow: ellipsis;
     padding: 3.5rem 0;
   }
 
+  .hero-dress-showcase {
+    max-width: 440px;
+    height: 460px;
+    margin: 0 auto;
+  }
+
+  .hero-dress-img {
+    max-width: 300px;
+    max-height: 310px;
+  }
+
 .hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
@@ -1791,6 +1802,18 @@ text-overflow: ellipsis;
 
 @media (max-width: 768px) {
   .hero-title { font-size: 3.2rem; }
+
+  .hero-dress-showcase {
+    max-width: 320px;
+    height: 380px;
+    margin: 0 auto;
+    border-radius: 28px;
+  }
+
+  .hero-dress-img {
+    max-width: 240px;
+    max-height: 250px;
+  }
 
 .features-grid { grid-template-columns: 1fr; }
 

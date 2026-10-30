@@ -2080,6 +2080,11 @@ button, input, select, textarea {
   .cta-btn-group {
     justify-content: center;
   }
+  .cta-bg-banner {
+    padding: 4.5rem 2rem;
+    background-size: cover;
+    background-position: center center;
+  }
   .cta-bg-inner h2 {
     font-size: 2.6rem;
   }
@@ -2135,8 +2140,17 @@ button, input, select, textarea {
   .section-title {
     font-size: 1.75rem;
   }
+  .cta-bg-banner {
+    padding: 3.5rem 1.25rem !important;
+    border-radius: var(--radius-lg);
+    background-size: cover !important;
+    background-position: center center !important;
+  }
   .cta-bg-inner h2 {
-    font-size: 2rem !important;
+    font-size: 1.85rem !important;
+  }
+  .cta-bg-inner p {
+    font-size: 1rem !important;
   }
   .cta-btn-group {
     flex-direction: column;
@@ -2240,10 +2254,22 @@ button, input, select, textarea {
   .bento-card-wide {
     grid-column: span 1 !important;
   }
-  .header-login-btn span {
+  .header-login-btn span:not(.header-cart-badge) {
     display: none;
   }
+  .header-login-btn .header-cart-badge {
+    display: inline-flex !important;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 0.7rem;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 3px;
+    z-index: 10;
+  }
   .header-login-btn {
+    position: relative;
     padding: 0.5rem 0.65rem;
     font-size: 0.88rem;
     min-width: 36px;
@@ -2259,6 +2285,19 @@ button, input, select, textarea {
   .fav-product-card {
     max-width: 100%;
     width: 100%;
+  }
+
+  /* Prevent hero image zoom extension and maintain full view */
+  .about-hero-full-img,
+  .contact-hero-full-img,
+  .festive-hero-full-img,
+  .home2-hero-full-img,
+  .products-hero-full-img,
+  .size-guide-hero-full-img {
+    animation: none !important;
+    transform: none !important;
+    object-fit: cover !important;
+    object-position: center center !important;
   }
 }
 
