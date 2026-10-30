@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Size Guide & Fit Calculator | Cuddle Cub</title>
+  <meta name="description" content="Find the perfect fit for your little cub with our interactive size calculator, baby growth measurements, and toddler sizing charts.">
+  <link rel="icon" type="image/png" href="cuddle-cub-light-logo-hd.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="size-guide.css">
+</head>
+<body>
+
+        
+  <header class="header">
+    <div class="container">
+      <nav class="nav-wrapper">
+        
+        <div class="brand-group">
+          <a href="index.html" class="brand-logo" aria-label="Cuddle Cub Home">
+            <div class="brand-icon-wrap"><img src="cuddle-cub-light-logo-hd.png" class="brand-logo-light" alt="Cuddle Cub Logo" width="52" height="52" /><img src="cuddle-cub-dark-logo-hd.png" class="brand-logo-dark" alt="Cuddle Cub Logo" width="52" height="52" /></div>
+            <div class="brand-text-block">
+              <span class="brand-text">Cuddle<span>Cub</span></span>
+              <span class="brand-tagline">"Cute. Comfy. Chic"</span>
+            </div>
+          </a>
+        </div>
+
+        
+        <div class="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="nav-dropdown-item">
+              <a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html" class="dropdown-link"><i class="fas fa-store"></i> Home 1</a></li>
+                <li><a href="home-2.html" class="dropdown-link"><i class="fas fa-wand-magic-sparkles"></i> Home 2</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html" class="nav-link ">About Us</a></li>
+            <li><a href="products.html" class="nav-link ">Products</a></li>
+            <li><a href="festive.html" class="nav-link">Festive Wear</a></li>
+            <li><a href="size-guide.html" class="nav-link active">Size Guide</a></li>
+            <li><a href="contact.html" class="nav-link ">Contact</a></li>
+          </ul>
+        </div>
+
+        
+        <div class="nav-actions">
+          
+          <button class="theme-icon-btn dir-toggle-btn" id="dir-toggle-btn" aria-label="Toggle Page Direction" title="Toggle Page Direction (LTR / RTL)">
+            <i class="fas fa-right-left"></i>
+          </button>
+
+          
+          <button class="theme-icon-btn theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Toggle Theme">
+            <i class="fas fa-moon theme-icon"></i>
+          </button>
+
+          
+          <a href="products.html" class="header-login-btn" aria-label="Shop Now">
+            <i class="fas fa-shopping-bag"></i>
+            <span>Shop Now</span>
+          </a>
+
+          
+          <button class="action-btn mobile-toggle" aria-label="Toggle navigation" style="display:none;">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+    <section class="size-guide-hero-fullscreen" id="size-guide-hero">
+      
+      <div class="size-guide-hero-bg-media">
+        <img src="size-guide-hero-baby-left-final.jpg" alt="Cute smiling baby in organic cream romper sitting on soft rug on the left with wooden growth chart stick and measuring tape" class="size-guide-hero-full-img" />
+        <div class="size-guide-hero-scrim"></div>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 5;">
+        <div class="size-guide-hero-content-right">
+          <span class="section-badge"><i class="fas fa-ruler-combined"></i> Precision Fit Assistant</span>
+          <h1 class="hero-title" style="margin-bottom: 1.25rem;">The Little Cub <em>Size & Growth Guide</em></h1>
+          <p class="hero-description" style="margin-bottom: 2.2rem;">
+            Babies and kids grow fast. Use our interactive estimator to pick the right silhouette with built-in grow-with-me stretch, diaper ease, and heirloom longevity.
+          </p>
+          
+          <div class="size-hero-pills style-floating-cards" id="sizeHeroPills">
+            <div class="size-pill size-pill-cuff">
+              <span class="pill-icon-box"><i class="fas fa-arrows-up-down-left-right"></i></span>
+              <div class="pill-text-wrap">
+                <span class="pill-main">Expandable Cuff Ease</span>
+                <span class="pill-sub">Grows 2 full sizes</span>
+              </div>
+            </div>
+
+            <div class="size-pill size-pill-diaper">
+              <span class="pill-icon-box"><i class="fas fa-baby"></i></span>
+              <div class="pill-text-wrap">
+                <span class="pill-main">Extra Diaper Room</span>
+                <span class="pill-sub">Gusset flare ease</span>
+              </div>
+            </div>
+
+            <div class="size-pill size-pill-exchange">
+              <span class="pill-icon-box"><i class="fas fa-rotate"></i></span>
+              <div class="pill-text-wrap">
+                <span class="pill-main">100% Free Fit Exchanges</span>
+                <span class="pill-sub">Zero-risk 30 days</span>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex; gap:1.2rem; flex-wrap:wrap;">
+            <a href="#section-calculator" class="btn btn-primary">Open Smart Calculator <i class="fas fa-calculator"></i></a>
+            <a href="#section-chart" class="btn btn-secondary">View Standard Charts</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section" id="section-calculator">
+      <div class="container">
+        <div class="size-calculator-box">
+          <div style="margin-bottom: 1.8rem;">
+            <h2 style="font-size: 1.7rem; margin-bottom: 0.4rem;"><i class="fas fa-calculator" style="color:var(--color-primary); margin-right:0.5rem;"></i> Smart Fit Calculator</h2>
+            <p style="color: var(--text-muted); font-size: 1rem;">Select your child's age or enter approximate weight/height for tailored recommendations.</p>
+          </div>
+
+          <form id="size-calc-form">
+            <div class="calculator-grid">
+              <div class="calc-input-group">
+                <label for="calc-age">Age Stage</label>
+                <select id="calc-age" required>
+                  <option value="newborn">Newborn (0 - 3 Months)</option>
+                  <option value="infant">Infant (3 - 6 Months)</option>
+                  <option value="baby" selected>Baby (6 - 12 Months)</option>
+                  <option value="toddler">Toddler (1 - 2 Years)</option>
+                  <option value="preschool">Preschooler (2 - 4 Years)</option>
+                  <option value="kids">Young Kid (4 - 6 Years)</option>
+                </select>
+              </div>
+
+              <div class="calc-input-group">
+                <label for="calc-weight">Approx Weight (kg / lbs)</label>
+                <input type="number" id="calc-weight" placeholder="e.g. 9 kg or 20 lbs" min="2" max="30" step="0.5" />
+              </div>
+
+              <div class="calc-input-group">
+                <label for="calc-height">Approx Height / Length (cm)</label>
+                <input type="number" id="calc-height" placeholder="e.g. 74 cm" min="40" max="130" />
+              </div>
+
+              <button type="button" id="calc-size-btn" class="btn btn-primary" style="height: 42px; padding: 0.5rem 1.4rem;">
+                Calculate Fit
+              </button>
+            </div>
+          </form>
+
+          <div id="size-result-card" class="size-result-card" style="display:none; margin-top:2rem;">
+            <div>
+              <span style="font-size:0.88rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); display:block; margin-bottom:0.25rem;">
+                Recommended Fit
+              </span>
+              <div id="calc-result-size" class="recommended-size">6-12 Months</div>
+              <p id="calc-result-advice" style="color:var(--text-muted); font-size:1rem; margin-top:0.4rem;">
+                Generous cut designed with diaper ease and soft flex bands.
+              </p>
+            </div>
+            <a href="products.html" class="btn btn-primary">Shop This Size <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section-tight" style="background-color: var(--color-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Visual Growth Milestones</span>
+          <h2 class="section-title">Fit In Action Across Ages</h2>
+          <p class="section-subtitle">See how Cuddle Cub garments fit real babies at every exciting developmental stage.</p>
+        </div>
+
+        <div class="categories-grid">
+          <div class="category-card">
+            <div class="category-image-wrap">
+              <span class="category-badge-chip">0 - 3 Months</span>
+              <img src="cat-newborn-cloud.jpg" alt="Newborn fit" />
+            </div>
+            <div class="category-body">
+              <h3>Kimono Roominess</h3>
+              <p>Extra neck width so clothing never pulls over a fragile baby head.</p>
+            </div>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image-wrap">
+              <span class="category-badge-chip">6 - 12 Months</span>
+              <img src="cat-infant-tummy.jpg" alt="Crawler fit" />
+            </div>
+            <div class="category-body">
+              <h3>Diaper Flare Ease</h3>
+              <p>Curved bottom gusset preventing bunching when crawling on carpets.</p>
+            </div>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image-wrap">
+              <span class="category-badge-chip">1 - 3 Years</span>
+              <img src="cat-toddler-steps.jpg" alt="Toddler fit" class="card-toddler-img" />
+            </div>
+            <div class="category-body">
+              <h3>Roll-Up Cuff Ease</h3>
+              <p>Finished inner cuffs that can be folded twice as toddlers sprint.</p>
+            </div>
+          </div>
+
+          <div class="category-card">
+            <div class="category-image-wrap">
+              <span class="category-badge-chip">3 - 6 Years</span>
+              <img src="cat-kids-running.jpg" alt="Kids fit" />
+            </div>
+            <div class="category-body">
+              <h3>Tailored Ease</h3>
+              <p>Clean shoulder drape with gentle stretch for active school days.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <div class="container">
+        <div style="margin-bottom: 2rem; text-align: center;">
+          <span class="section-badge"><i class="fas fa-table"></i> Metric & Imperial Reference</span>
+          <h2 class="section-title">Standard Measurements Table</h2>
+          <p class="section-subtitle">All measurements reflect body measurements. Garments feature 2-3 cm ease for diaper bulk.</p>
+        </div>
+
+        <div class="table-responsive">
+          <table class="size-table">
+            <thead>
+              <tr>
+                <th>Size Label</th>
+                <th>Age Milestone</th>
+                <th>Weight (kg)</th>
+                <th>Height / Length (cm)</th>
+                <th>Chest (cm)</th>
+                <th>Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>NB</strong></td>
+                <td>0 - 1 Month</td>
+                <td>2.5 - 4.0 kg</td>
+                <td>Up to 52 cm</td>
+                <td>38 cm</td>
+                <td>Hospital take-home, swaddles</td>
+              </tr>
+              <tr>
+                <td><strong>0 - 3M</strong></td>
+                <td>1 - 3 Months</td>
+                <td>4.0 - 6.0 kg</td>
+                <td>52 - 62 cm</td>
+                <td>41 cm</td>
+                <td>Kimono bodysuits, wrap rompers</td>
+              </tr>
+              <tr>
+                <td><strong>3 - 6M</strong></td>
+                <td>3 - 6 Months</td>
+                <td>6.0 - 8.0 kg</td>
+                <td>62 - 68 cm</td>
+                <td>44 cm</td>
+                <td>Tummy time play, footed sleepers</td>
+              </tr>
+              <tr>
+                <td><strong>6 - 12M</strong></td>
+                <td>6 - 12 Months</td>
+                <td>8.0 - 10.5 kg</td>
+                <td>68 - 78 cm</td>
+                <td>47 cm</td>
+                <td>Crawlers, bubble rompers</td>
+              </tr>
+              <tr>
+                <td><strong>12 - 18M</strong></td>
+                <td>12 - 18 Months</td>
+                <td>10.5 - 12.0 kg</td>
+                <td>78 - 84 cm</td>
+                <td>50 cm</td>
+                <td>First steps, dungarees & sets</td>
+              </tr>
+              <tr>
+                <td><strong>18 - 24M (2T)</strong></td>
+                <td>1.5 - 2 Years</td>
+                <td>12.0 - 14.0 kg</td>
+                <td>84 - 90 cm</td>
+                <td>52 cm</td>
+                <td>Toddler active sets, festive frocks</td>
+              </tr>
+              <tr>
+                <td><strong>3 - 4Y</strong></td>
+                <td>3 - 4 Years</td>
+                <td>14.0 - 17.0 kg</td>
+                <td>90 - 102 cm</td>
+                <td>55 cm</td>
+                <td>Preschool play, resort sets</td>
+              </tr>
+              <tr>
+                <td><strong>5 - 6Y</strong></td>
+                <td>5 - 6 Years</td>
+                <td>17.0 - 21.0 kg</td>
+                <td>102 - 116 cm</td>
+                <td>59 cm</td>
+                <td>Festive Nehru sets & twirl gowns</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section" style="background-color: var(--color-secondary);">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-visual">
+            <div class="hero-image-card">
+              <img src="guide-measure-baby.jpg" alt="Measuring baby comfortably" />
+            </div>
+          </div>
+          <div class="hero-content">
+            <span class="section-badge"><i class="fas fa-hand-holding-heart"></i> Gentle Measuring Guide</span>
+            <h2 class="section-title">How To Take Accurate Measurements at Home</h2>
+            <p class="hero-description">
+              Babies rarely stay still for measuring tapes! Here are our gentle, stress-free recommendations for getting the right size.
+            </p>
+            <div class="features-grid" style="grid-template-columns: 1fr; gap:1.2rem;">
+              <div class="feature-box">
+                <div class="feature-thumb-wrapper">
+                  <img src="guide-length.jpg" alt="Measure length" />
+                </div>
+                <div class="feature-info">
+                  <h4>1. Length / Height While Napping</h4>
+                  <p>Lay your baby flat on a soft blanket while asleep. Measure from top of head down to heels.</p>
+                </div>
+              </div>
+              <div class="feature-box">
+                <div class="feature-thumb-wrapper">
+                  <img src="guide-chest.jpg" alt="Measure chest" />
+                </div>
+                <div class="feature-info">
+                  <h4>2. Chest Circumference</h4>
+                  <p>Wrap the soft tape comfortably around the widest part of their chest directly below underarms.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <div class="container">
+        <div class="categories-grid" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="category-card" style="padding: 2.2rem;">
+            <div class="feature-thumb-wrapper" style="width:64px; height:64px; margin-bottom:1.2rem;">
+              <img src="guide-between-sizes.jpg" alt="Between sizes" />
+            </div>
+            <h3 style="font-size:1.25rem; margin-bottom:0.5rem;">Between Sizes?</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem;">We always advise sizing up. Little cubs sprout rapidly, and rolled cuffs on our waffle knits look adorably intentional!</p>
+          </div>
+
+          <div class="category-card" style="padding: 2.2rem;">
+            <div class="feature-thumb-wrapper" style="width:64px; height:64px; margin-bottom:1.2rem;">
+              <img src="guide-cloth-diaper.jpg" alt="Cloth diapers" />
+            </div>
+            <h3 style="font-size:1.25rem; margin-bottom:0.5rem;">Cloth Diaper Friendly</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem;">Our bottom cuts feature a wider saddle gusset, seamlessly accommodating both disposable and fluffy reusable cloth diapers.</p>
+          </div>
+
+          <div class="category-card" style="padding: 2.2rem;">
+            <div class="feature-thumb-wrapper" style="width:64px; height:64px; margin-bottom:1.2rem;">
+              <img src="guide-prewash.jpg" alt="Pre-washed" />
+            </div>
+            <h3 style="font-size:1.25rem; margin-bottom:0.5rem;">Pre-Washed & Pre-Shrunk</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem;">Every garment undergoes gentle organic bio-washing. No post-wash surprises or shrinkage when laundered as directed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section" style="padding: 4.5rem 0;">
+      <div class="container">
+        <div class="cta-bg-banner" style="background-image: url('cta-luxury-organic-family.jpg');">
+          <div class="cta-bg-overlay"></div>
+          <div class="cta-bg-inner">
+            <span class="section-badge" style="background: rgba(255,255,255,0.18); color: #fdfbf7; border-color: rgba(255,255,255,0.3); margin-bottom: 1.2rem;">
+              <i class="fas fa-ruler-combined"></i> Precision Fit Guarantee
+            </span>
+            <h2>If The Fit Isn't Perfect,<em>We Exchange It For Free</em></h2>
+            <p>Children grow in delightful, unexpected leaps. Try our garments at home in complete comfort. If anything fits too snug or roomy, our prepaid courier returns make exchanges seamless, swift, and completely free.</p>
+            <div class="cta-btn-group" style="justify-content: center;">
+              <a href="products.html" class="btn btn-primary">
+                <i class="fas fa-shopping-bag"></i> Shop Risk-Free Now
+              </a>
+              <a href="contact.html" class="btn btn-secondary">
+                <i class="fas fa-headset"></i> Sizing Concierge
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="brand-icon-wrap"><img src="cuddle-cub-light-logo-hd.png" class="brand-logo-light" alt="Cuddle Cub Logo" width="52" height="52" /><img src="cuddle-cub-dark-logo-hd.png" class="brand-logo-dark" alt="Cuddle Cub Logo" width="52" height="52" /></div>
+            <div class="brand-text-block">
+              <span class="brand-text">Cuddle<span>Cub</span></span>
+              <span class="brand-tagline">"Cute. Comfy. Chic"</span>
+            </div>
+          </a>
+          <p>Handcrafting joyous childhood memories through breathable, organic, heirloom fabrics in harmonious forest greens and gentle creams.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="festive.html">Festive Wear</a></li>
+            <li><a href="size-guide.html">Size Guide</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Shop Collection</h4>
+          <ul class="footer-links">
+            <li><a href="products.html">Newborn Essentials</a></li>
+            <li><a href="products.html">Active Toddlers</a></li>
+            <li><a href="festive.html">Festive & Occasion</a></li>
+            <li><a href="products.html">Bamboo Sleepwear</a></li>
+            <li><a href="products.html">Gift Bundles</a></li>
+            <li><a href="products.html">Organic Swaddles</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="size-guide.html">Interactive Size Guide</a></li>
+            <li><a href="contact.html">Store Locator & Hours</a></li>
+            <li><a href="about.html">Our Organic Promise</a></li>
+            <li><a href="contact.html">Track Order</a></li>
+            <li><a href="contact.html">Shipping & Returns</a></li>
+            <li><a href="size-guide.html">Hassle-Free Size Exchanges</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Join The Cub Family</h4>
+          <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:1rem; line-height: 1.5;">Subscribe for parenting guides, nursery styling tips, and new seasonal drops.</p>
+          <form id="newsletter-form" class="newsletter-box">
+            <input type="email" placeholder="Your email address" required aria-label="Email address" />
+            <button type="submit" class="newsletter-submit-icon-btn" aria-label="Subscribe">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Cuddle Cub Apparel Co. All rights reserved.</p>
+        <div style="display:flex; gap:1.5rem;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Ethical Sourcing</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cart-drawer-overlay"></div>
+  <div class="cart-drawer">
+    <div class="cart-header">
+      <h3 style="font-size:1.35rem;">Your Shopping Bag</h3>
+      <button class="action-btn close-cart-btn"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-body cart-items-container"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span class="cart-subtotal-val">$34.00</span>
+      </div>
+      <button class="btn btn-primary cart-buy-btn" style="width:100%; font-weight:700;" onclick="handleBuyNow()"><i class="fas fa-lock" style="margin-right:0.4rem; font-size:0.85rem;"></i> Buy Now</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
