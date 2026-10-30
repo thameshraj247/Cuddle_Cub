@@ -2182,6 +2182,49 @@ button, input, select, textarea {
 }
 
 @media (max-width: 640px) {
+  .header .container {
+    padding: 0 0.75rem;
+  }
+  .brand-logo,
+  .header .brand-logo {
+    gap: 0.5rem;
+  }
+  .brand-icon-wrap,
+  .header .brand-icon-wrap {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
+  }
+  .brand-icon-wrap img,
+  .header .brand-icon-wrap img {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+  }
+  .brand-text,
+  .header .brand-text {
+    font-size: 1.45rem !important;
+  }
+  .brand-tagline,
+  .header .brand-tagline {
+    font-size: 0.75rem !important;
+  }
+  .nav-actions {
+    gap: 0.35rem;
+    margin-left: 0.2rem;
+  }
+  .theme-icon-btn,
+  .action-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 0.85rem;
+  }
+  .mobile-toggle {
+    display: inline-flex !important;
+  }
   .modern-catalog-grid,
   .categories-grid,
   .lookbook-grid,
@@ -2201,7 +2244,13 @@ button, input, select, textarea {
     display: none;
   }
   .header-login-btn {
-    padding: 0.55rem 0.75rem;
+    padding: 0.5rem 0.65rem;
+    font-size: 0.88rem;
+    min-width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   .card,
   .catalog-card,
