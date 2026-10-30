@@ -769,13 +769,13 @@
   transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
 }
 
-/* 2nd card (wide) — crimson festive kurta set, center the outfit */
+
 .moment-card-wide .moment-media-wrap img {
   object-position: center 20%;
   object-fit: cover;
 }
 
-/* last card (standard-2 / full-width banner) — garden toddler linen, wide landscape image */
+
 .moment-card-standard-2 .moment-media-wrap img {
   object-position: center 40%;
   object-fit: cover;

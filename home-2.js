@@ -196,17 +196,14 @@ function initSensoryStudio() {
     loader.classList.add('loaded');
   }
 
-  // Smooth automatic reveal
   window.addEventListener('load', () => {
     setTimeout(openCurtains, 950);
   });
 
-  // Fallback timer if load event already fired
   setTimeout(() => {
     openCurtains();
   }, 2000);
 
-  // Instant skip on click
   loader.addEventListener('click', () => {
     openCurtains();
   });

@@ -50,7 +50,7 @@
   padding: 0;
 }
 
-/* Custom Luxury Mouse Cursor */
+
 .custom-cursor-dot,
 .custom-cursor-ring {
   pointer-events: none;
@@ -2177,7 +2177,7 @@ button, input, select, textarea {
   }
 }
 
-/* Global Responsive Card Layout Alignment */
+
 @media (max-width: 1024px) {
   .modern-catalog-grid,
   .categories-grid,
@@ -2287,7 +2287,7 @@ button, input, select, textarea {
     width: 100%;
   }
 
-  /* Prevent hero image zoom extension and maintain full view */
+  
   .about-hero-full-img,
   .contact-hero-full-img,
   .festive-hero-full-img,

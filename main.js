@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   initLuxuryCursor();
   initDirection();
@@ -6,10 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initCart();
   initWishlist();
-  initProductsFilter();
-  initSizeCalculator();
-  initContactForm();
-  initHeroDressShowcase();
   initScrollCounters();
 });
 
@@ -280,7 +275,6 @@ function renderCart() {
               <i class="fas fa-trash-alt"></i> Remove
             </button>
           </div>
-          <!-- Quantity Stepper Controls: [-] [Quantity] [+] -->
           <div style="display:flex; align-items:center; justify-content:flex-start;">
             <div class="cart-qty-control">
               <button class="cart-qty-btn" onclick="updateItemQuantity(${index}, -1)" aria-label="Decrease quantity" title="Decrease quantity">
@@ -320,180 +314,6 @@ function initWishlist() {
   });
 }
 
-function initProductsFilter() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const productCards = document.querySelectorAll('.products-grid .product-card');
-  const searchInput = document.querySelector('#product-search');
-
-  if (!filterBtns.length && !searchInput) return;
-
-  function filterCards() {
-    const activeFilter = document.querySelector('.filter-btn.active')?.dataset.filter || 'all';
-    const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
-
-    productCards.forEach(card => {
-      const category = card.dataset.category || '';
-      const age = card.dataset.age || '';
-      const title = card.querySelector('.product-name')?.innerText.toLowerCase() || '';
-
-      const matchesFilter = (activeFilter === 'all') || 
-                            (category === activeFilter) || 
-                            (age === activeFilter) || 
-                            (activeFilter === 'festive' && card.dataset.festive === 'true');
-
-      const matchesSearch = !query || title.includes(query) || category.includes(query) || age.includes(query);
-
-      if (matchesFilter && matchesSearch) {
-        card.style.display = 'flex';
-      } else {
-        card.style.display = 'none';
-      }
-    });
-  }
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      filterCards();
-    });
-  });
-
-  if (searchInput) {
-    searchInput.addEventListener('input', filterCards);
-  }
-}
-
-function initSizeCalculator() {
-  const calcBtn = document.querySelector('#calc-size-btn');
-  const ageSelect = document.querySelector('#calc-age');
-  const weightInput = document.querySelector('#calc-weight');
-  const heightInput = document.querySelector('#calc-height');
-  const resultCard = document.querySelector('#size-result-card');
-  const resultDisplay = document.querySelector('#calc-result-size');
-  const resultAdvice = document.querySelector('#calc-result-advice');
-
-  if (!calcBtn || !ageSelect) return;
-
-  calcBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    const age = ageSelect.value;
-    const weight = parseFloat(weightInput?.value) || 0;
-    const height = parseFloat(heightInput?.value) || 0;
-
-    let recommended = '6-12 Months (Medium)';
-    let tip = 'Generous cut designed with diaper ease and soft flex bands.';
-
-    if (age === 'newborn' || (weight > 0 && weight <= 4)) {
-      recommended = 'Newborn (0-3 Months)';
-      tip = 'Crafted with fold-over scratch mitts and ultra-soft kimono wrap closure.';
-    } else if (age === 'infant' || (weight > 4 && weight <= 8)) {
-      recommended = '3-6 Months';
-      tip = 'Extra room for kicking and quick-snap bottom for easy changes.';
-    } else if (age === 'baby' || (weight > 8 && weight <= 11)) {
-      recommended = '6-12 Months';
-      tip = 'Non-slip grip knees and stretchable neck opening for crawling babies.';
-    } else if (age === 'toddler' || (weight > 11 && weight <= 15)) {
-      recommended = '1-2 Years (Toddler)';
-      tip = 'Reinforced stitching and relaxed fit for active little explorers.';
-    } else if (age === 'preschool' || (weight > 15 && weight <= 20)) {
-      recommended = '2-4 Years';
-      tip = 'Tailored for self-dressing with gentle elastic waistbands.';
-    } else if (age === 'kids') {
-      recommended = '4-6 Years';
-      tip = 'Comfort stretch fabric suitable for playful school days and parties.';
-    }
-
-    if (resultDisplay) resultDisplay.innerText = recommended;
-    if (resultAdvice) resultAdvice.innerText = tip;
-    if (resultCard) {
-      resultCard.style.display = 'flex';
-      resultCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
-  });
-}
-
-function initContactForm() {
-  const form = document.querySelector('#contact-form');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = form.querySelector('[name="name"]')?.value || 'Guest';
-      showToast(`Thank you, ${name}! Your message has been sent to Cuddle Cub Concierge.`);
-      form.reset();
-    });
-  }
-
-  const newsletterForm = document.querySelector('#newsletter-form');
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      showToast('Welcome to the Cuddle Cub family! Thank you for subscribing.');
-      newsletterForm.reset();
-    });
-  }
-}
-
-function initHeroDressShowcase() {
-  const showcase = document.getElementById('heroDressShowcase');
-  if (!showcase) return;
-
-  const slides = showcase.querySelectorAll('.dress-slide');
-  const prevBtn = showcase.querySelector('.prev-dress');
-  const nextBtn = showcase.querySelector('.next-dress');
-  if (!slides.length) return;
-
-  let currentIndex = 0;
-  let autoTimer = null;
-
-  function showSlide(index) {
-    if (index >= slides.length) index = 0;
-    if (index < 0) index = slides.length - 1;
-    currentIndex = index;
-
-    slides.forEach((slide, i) => {
-      if (i === currentIndex) {
-        slide.classList.add('active');
-      } else {
-        slide.classList.remove('active');
-      }
-    });
-  }
-
-  function startAutoPlay() {
-    stopAutoPlay();
-    autoTimer = setInterval(() => {
-      showSlide(currentIndex + 1);
-    }, 3200);
-  }
-
-  function stopAutoPlay() {
-    if (autoTimer) {
-      clearInterval(autoTimer);
-      autoTimer = null;
-    }
-  }
-
-  if (nextBtn) {
-    nextBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      showSlide(currentIndex + 1);
-      startAutoPlay();
-    });
-  }
-
-  if (prevBtn) {
-    prevBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      showSlide(currentIndex - 1);
-      startAutoPlay();
-    });
-  }
-
-  showcase.style.transform = 'none';
-
-  startAutoPlay();
-}
 function showToast(message) {
   let container = document.querySelector('.toast-container');
   if (!container) {
@@ -768,24 +588,6 @@ function triggerPartyPoppers() {
   render();
 }
 
-function switchPillStyle(styleClass) {
-  const container = document.getElementById('sizeHeroPills');
-  if (!container) return;
-
-  container.className = 'size-hero-pills ' + styleClass;
-}
-
-function initPillStyle() {
-  const container = document.getElementById('sizeHeroPills');
-  if (container) {
-    container.className = 'size-hero-pills style-floating-cards';
-  }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  initPillStyle();
-});
-
 function initScrollCounters() {
   const counterElements = document.querySelectorAll('.count-up');
   if (!counterElements.length) return;
@@ -855,158 +657,6 @@ function animateCounter(el) {
 
   requestAnimationFrame(step);
 }
-
-function toggleFaq(card) {
-  if (!card) return;
-  const wasActive = card.classList.contains('active');
-
-  const parentGrid = card.closest('.faq-accordion-grid');
-  if (parentGrid) {
-    parentGrid.querySelectorAll('.faq-card').forEach(c => {
-      if (c !== card) c.classList.remove('active');
-    });
-  }
-
-  if (wasActive) {
-    card.classList.remove('active');
-  } else {
-    card.classList.add('active');
-  }
-}
-
-(function initProductClothingRail() {
-  const track = document.getElementById("railHangerTrack");
-  if (!track) return;
-
-  const items = Array.from(track.querySelectorAll(".rail-item"));
-  if (!items.length) return;
-
-  const inspectorTitle = document.getElementById("inspectorTitle");
-  const inspectorDesc = document.getElementById("inspectorDesc");
-  const inspectorFeatures = document.getElementById("inspectorFeatures");
-  const inspectorBuyBtn = document.getElementById("inspectorBuyBtn");
-  const railFlipBtn = document.getElementById("railFlipBtn");
-  const prevBtn = document.getElementById("railPrevBtn");
-  const nextBtn = document.getElementById("railNextBtn");
-
-  const garmentsData = [
-    {
-      id: "romper-cloud",
-      name: "Organic Cloud Knit Romper",
-      desc: "Ultra-soft 100% GOTS organic cotton one-piece with expandable neckline and nickel-free snaps for newborn comfort.",
-      price: "$38",
-      features: [
-        "100% Certified GOTS Organic Cotton",
-        "Grow-with-me foldover ankle cuffs",
-        "Nickel-free snaps along inner leg gusset"
-      ]
-    },
-    {
-      id: "hoodie-bear",
-      name: "Snuggle Bear Playsuit",
-      desc: "Plush organic brushed fleece with whimsical cub ears and soft ribbing for crawling adventures.",
-      price: "$44",
-      features: [
-        "Ultra-cozy organic brushed French terry",
-        "Soft double-lined hood with playful bear ears",
-        "Naturally hypoallergenic & soothing on skin"
-      ]
-    },
-    {
-      id: "frock-prairie",
-      name: "Prairie Heirloom Twirl Frock",
-      desc: "Breathable double-gauze linen dress featuring delicate flutter sleeves and hand-embroidered wildflower botanicals.",
-      price: "$48",
-      features: [
-        "Pure double-weave organic cotton muslin",
-        "Natural mother-of-pearl back buttons",
-        "Non-restrictive twirl silhouette"
-      ]
-    },
-    {
-      id: "overalls-sage",
-      name: "Sagebrush Explorer Dungarees",
-      desc: "Durable organic twill overalls with reinforced double knees and brass buckles built for playground sprints and muddy puddles.",
-      price: "$52",
-      features: [
-        "Heavyweight 280 GSM organic cotton twill",
-        "Two-position adjustable shoulder straps",
-        "Reinforced knee patches for crawl & climb"
-      ]
-    },
-    {
-      id: "kurta-festive",
-      name: "Royal Heritage Chanderi Kurta",
-      desc: "Lustrous festive kurta tailored in mulberry chanderi, lined with ultra-breathable pure cotton voile slip for zero itch.",
-      price: "$64",
-      features: [
-        "Authentic hand-woven zari embroidery",
-        "100% itch-free organic voile inner lining",
-        "Relaxed mandarin band collar"
-      ]
-    }
-  ];
-
-  let currentIndex = 0;
-
-  function updateInspector(index) {
-    currentIndex = index;
-    items.forEach((item, idx) => {
-      if (idx === index) {
-        item.classList.add("active");
-        item.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-      } else {
-        item.classList.remove("active");
-        item.classList.remove("flipped");
-      }
-    });
-
-    const data = garmentsData[index];
-    if (data && inspectorTitle && inspectorDesc && inspectorBuyBtn) {
-      inspectorTitle.textContent = data.name;
-      inspectorDesc.textContent = data.desc;
-      inspectorBuyBtn.textContent = `View In Catalog • ${data.price}`;
-      if (inspectorFeatures) {
-        inspectorFeatures.innerHTML = data.features
-          .map((f) => `<span><i class="fas fa-check-circle"></i> ${f}</span>`)
-          .join("");
-      }
-    }
-  }
-
-  items.forEach((item, idx) => {
-    item.addEventListener("click", () => {
-      if (currentIndex === idx) {
-        item.classList.toggle("flipped");
-      } else {
-        updateInspector(idx);
-      }
-    });
-  });
-
-  if (railFlipBtn) {
-    railFlipBtn.addEventListener("click", () => {
-      const activeItem = items[currentIndex];
-      if (activeItem) {
-        activeItem.classList.toggle("flipped");
-      }
-    });
-  }
-
-  if (prevBtn) {
-    prevBtn.addEventListener("click", () => {
-      const newIdx = (currentIndex - 1 + items.length) % items.length;
-      updateInspector(newIdx);
-    });
-  }
-
-  if (nextBtn) {
-    nextBtn.addEventListener("click", () => {
-      const newIdx = (currentIndex + 1) % items.length;
-      updateInspector(newIdx);
-    });
-  }
-})();
 
 function initLuxuryCursor() {
   let dot = document.querySelector('.custom-cursor-dot');

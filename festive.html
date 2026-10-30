@@ -736,7 +736,7 @@
             <p style="font-style: italic; color:var(--text-muted); margin-bottom:1.5rem;">"Our son wore the forest kurta for 8 straight hours at a wedding and didn't pull or scratch at his collar once!"</p>
             <div style="display:flex; align-items:center; gap:0.8rem;">
               <div style="width:48px; height:48px; border-radius:50%; overflow:hidden;">
-                <img src="review-pooja.jpg" alt="Parent review avatar" style="width:100%; height:100%; object-fit:cover;" />
+                <img src="review-sarah.jpg" alt="Parent review avatar" style="width:100%; height:100%; object-fit:cover;" />
               </div>
               <div>
                 <strong>Pooja &amp; Rohan</strong>
@@ -750,7 +750,7 @@
             <p style="font-style: italic; color:var(--text-muted); margin-bottom:1.5rem;">"The cream and gold twirl dress was the star of our holiday card. Photos do not do justice to the fabric's soft sheen."</p>
             <div style="display:flex; align-items:center; gap:0.8rem;">
               <div style="width:48px; height:48px; border-radius:50%; overflow:hidden;">
-                <img src="review-claire.jpg" alt="Parent review avatar" style="width:100%; height:100%; object-fit:cover;" />
+                <img src="review-ananya.jpg" alt="Parent review avatar" style="width:100%; height:100%; object-fit:cover;" />
               </div>
               <div>
                 <strong>Claire Henderson</strong>
@@ -898,68 +898,6 @@
   </div>
 
   <script src="main.js"></script>
-  <script>
-    // Festive Capsule 4-Card Step Carousel Engine
-    document.addEventListener('DOMContentLoaded', () => {
-      const track = document.getElementById('festive-slider-track');
-      const prevBtn = document.getElementById('festive-prev-btn');
-      const nextBtn = document.getElementById('festive-next-btn');
-      const counterEl = document.getElementById('festive-carousel-counter');
-
-      if (!track || !prevBtn || !nextBtn) return;
-
-      const cards = track.querySelectorAll('.product-card');
-      const totalCards = cards.length;
-      let currentIndex = 0;
-
-      function getVisibleCount() {
-        const width = window.innerWidth;
-        if (width <= 640) return 1;
-        if (width <= 1024) return 2;
-        return 4; // desktop: 4 cards visible
-      }
-
-      function updateSlider() {
-        const visibleCount = getVisibleCount();
-        const maxIndex = Math.max(0, totalCards - visibleCount);
-
-        if (currentIndex > maxIndex) currentIndex = maxIndex;
-        if (currentIndex < 0) currentIndex = 0;
-
-        const firstCard = cards[0];
-        if (!firstCard) return;
-
-        const cardRect = firstCard.getBoundingClientRect();
-        const trackStyles = window.getComputedStyle(track);
-        const gap = parseFloat(trackStyles.gap) || 24;
-        const stepWidth = cardRect.width + gap;
-
-        const translateX = -(currentIndex * stepWidth);
-        track.style.transform = 'translateX(' + translateX + 'px)';
-
-        prevBtn.disabled = (currentIndex === 0);
-        nextBtn.disabled = (currentIndex >= maxIndex);
-      }
-
-      prevBtn.addEventListener('click', () => {
-        const visibleCount = getVisibleCount();
-        currentIndex = Math.max(0, currentIndex - visibleCount);
-        updateSlider();
-      });
-
-      nextBtn.addEventListener('click', () => {
-        const visibleCount = getVisibleCount();
-        const maxIndex = Math.max(0, totalCards - visibleCount);
-        currentIndex = Math.min(maxIndex, currentIndex + visibleCount);
-        updateSlider();
-      });
-
-      window.addEventListener('resize', () => {
-        updateSlider();
-      });
-
-      setTimeout(updateSlider, 120);
-    });
-  </script>
+  <script src="festive.js"></script>
 </body>
 </html>

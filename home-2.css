@@ -655,9 +655,9 @@ body.cursor-hover .custom-cursor-dot {
   display: flex;
   flex-direction: column;
   background: var(--bg-surface);
-  border: 1.5px solid var(--border-color);
-  border-radius: 24px;
-  padding: 1rem;
+  border: 1.5px solid var(--color-primary);
+  border-radius: 22px;
+  padding: 1.15rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -668,8 +668,8 @@ body.cursor-hover .custom-cursor-dot {
 
 .fav-product-card:hover {
   transform: translateY(-5px);
-  border-color: var(--color-primary);
-  box-shadow: 0 12px 30px rgba(30, 70, 53, 0.12);
+  border-color: var(--color-primary-dark);
+  box-shadow: 0 12px 30px rgba(30, 70, 53, 0.16);
 }
 
 .fav-card-image-box {
@@ -1747,13 +1747,13 @@ body.cursor-hover .custom-cursor-dot {
 
 [data-theme="dark"] .fav-product-card {
   background: #15221b;
-  border-color: rgba(116, 198, 157, 0.22);
+  border-color: #74c69d;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 [data-theme="dark"] .fav-product-card:hover {
-  border-color: #74c69d;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6), 0 0 16px rgba(116, 198, 157, 0.15);
+  border-color: #95d5b2;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6), 0 0 16px rgba(116, 198, 157, 0.2);
 }
 
 [data-theme="dark"] .fav-card-image-box {
