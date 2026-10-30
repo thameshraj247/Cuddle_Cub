@@ -197,7 +197,7 @@
               Fill out the form below and a member of our family concierge will reply within 24 hours.
             </p>
 
-            <form id="contact-form">
+            <form id="contact-form" onsubmit="event.preventDefault(); handleContactSubmit(event);">
               <div class="form-group">
                 <label for="contact-name">Your Full Name *</label>
                 <input type="text" id="contact-name" name="name" placeholder="e.g. Emily Watson" required />
