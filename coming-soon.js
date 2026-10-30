@@ -70,12 +70,12 @@ function spawnCelebrationParticles(container) {
 }
 
 function initSubtleInteractiveMotion() {
-  const card = document.querySelector('.cs-center-card');
+  const card = document.querySelector('.cs-editorial-frame') || document.querySelector('.cs-center-card');
   if (!card) return;
 
   window.addEventListener('mousemove', (e) => {
-    const x = (e.clientX / window.innerWidth - 0.5) * 8;
-    const y = (e.clientY / window.innerHeight - 0.5) * 8;
+    const x = (e.clientX / window.innerWidth - 0.5) * 6;
+    const y = (e.clientY / window.innerHeight - 0.5) * 6;
     card.style.transform = `translate3d(${x}px, ${y}px, 0)`;
   });
 }

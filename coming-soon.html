@@ -22,11 +22,6 @@
     <div class="cs-ambient-glow cs-glow-1"></div>
     <div class="cs-ambient-glow cs-glow-2"></div>
 
-    <div class="cs-floater cs-floater-1"><i data-lucide="leaf" class="fas fa-leaf"></i></div>
-    <div class="cs-floater cs-floater-2"><i data-lucide="sparkles" class="fas fa-wand-magic-sparkles"></i></div>
-    <div class="cs-floater cs-floater-3"><i data-lucide="footprints" class="fas fa-paw"></i></div>
-    <div class="cs-floater cs-floater-4"><i data-lucide="heart" class="fas fa-heart"></i></div>
-
     <div class="cs-corner-actions">
       <button class="theme-icon-btn dir-toggle-btn" id="dir-toggle-btn" aria-label="Toggle Page Direction" title="Toggle Page Direction (LTR / RTL)">
         <i data-lucide="arrow-left-right" class="fas fa-right-left"></i>
@@ -37,71 +32,95 @@
       </button>
     </div>
 
-    <main class="cs-center-card">
+    <main class="cs-editorial-frame">
 
-      <a href="index.html" class="cs-center-brand" aria-label="Cuddle Cub Home">
-        <div class="cs-brand-logo-wrap">
-          <img src="cuddle-cub-light-logo-hd.png" class="brand-logo-light" alt="Cuddle Cub Logo" width="58" height="58" />
-          <img src="cuddle-cub-dark-logo-hd.png" class="brand-logo-dark" alt="Cuddle Cub Logo" width="58" height="58" />
-        </div>
-        <div class="cs-brand-text-block">
-          <span class="cs-brand-name">Cuddle<span>Cub</span></span>
-          <span class="cs-brand-tagline">"Cute. Comfy. Chic"</span>
-        </div>
-      </a>
+      <header class="cs-brand-header">
+        <a href="index.html" class="cs-center-brand" aria-label="Cuddle Cub Home">
+          <div class="cs-brand-logo-wrap">
+            <img src="cuddle-cub-light-logo-hd.png" class="brand-logo-light" alt="Cuddle Cub Logo" width="60" height="60" />
+            <img src="cuddle-cub-dark-logo-hd.png" class="brand-logo-dark" alt="Cuddle Cub Logo" width="60" height="60" />
+          </div>
+          <div class="cs-brand-text-block">
+            <span class="cs-brand-name">Cuddle<span>Cub</span></span>
+            <span class="cs-brand-tagline">"Cute. Comfy. Chic"</span>
+          </div>
+        </a>
+      </header>
 
-      <span class="cs-badge">
-        <i data-lucide="sparkles" class="fas fa-wand-magic-sparkles cs-sparkle-anim"></i> A New Capsule Is Blossoming
-      </span>
+      <div class="cs-decorative-flourish">
+        <span class="cs-flourish-line"></span>
+        <span class="cs-flourish-badge"><i data-lucide="sparkles" class="fas fa-wand-magic-sparkles"></i> The Autumn Capsule Is Blooming</span>
+        <span class="cs-flourish-line"></span>
+      </div>
 
-      <h1 class="cs-title">Something Truly Gentle Is on the Way</h1>
+      <div class="cs-text-showcase">
+        <h1 class="cs-title">Gentle Threads for <em>Little Wonders</em></h1>
+        <p class="cs-subtitle">
+          We are weaving pure GOTS-certified organic cotton with soothing chamomile botanical dyes. Crafted for tranquil newborn naps and joyful childhood giggles.
+        </p>
+      </div>
 
-      <p class="cs-subtitle">
-        We are weaving the final botanical threads into our upcoming Heirloom &amp; Autumn Layette Collection. Breathable GOTS organic cotton and cloud-soft bamboo silk, tailored for the gentlest dreams.
-      </p>
+      <section class="cs-invitation-box">
+        <form id="csNotifyForm" class="cs-notify-form">
+          <div class="cs-input-group">
+            <i data-lucide="mail" class="fas fa-envelope cs-input-icon"></i>
+            <input type="email" id="csEmailInput" class="cs-email-input" placeholder="Enter your email to receive launch invitations &amp; 20% privilege code..." required aria-label="Parent email address" />
+            <button type="submit" class="cs-submit-btn">
+              <span>Reserve VIP Access</span>
+              <i data-lucide="arrow-right" class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <div id="csSuccessMsg" class="cs-success-msg" role="status" aria-live="polite">
+            <i data-lucide="check-circle" class="fas fa-circle-check"></i>
+            <span>You are on our private VIP cradle list! Your 20% privilege code has been sent.</span>
+          </div>
+        </form>
+      </section>
 
-      <form id="csNotifyForm" class="cs-notify-form">
-        <div class="cs-input-group">
-          <i data-lucide="mail" class="fas fa-envelope cs-input-icon"></i>
-          <input type="email" id="csEmailInput" class="cs-email-input" placeholder="Enter your email for VIP early access..." required aria-label="Email for VIP access" />
-          <button type="submit" class="cs-submit-btn">
-            <span>Join VIP Cradle List</span>
-            <i data-lucide="bell" class="fas fa-bell"></i>
-          </button>
-        </div>
-        <div id="csSuccessMsg" class="cs-success-msg" role="status" aria-live="polite">
-          <i data-lucide="check-circle" class="fas fa-circle-check"></i>
-          <span>Welcome to the VIP Cradle List! Your 20% launch privilege code has been sent.</span>
-        </div>
-      </form>
-
-      <div class="cs-teaser-row">
-        <div class="cs-teaser-pill">
+      <div class="cs-signature-pillars">
+        <div class="cs-pillar-item">
           <i data-lucide="leaf" class="fas fa-leaf"></i>
-          <span>100% GOTS Organic</span>
+          <div class="cs-pillar-content">
+            <h4>100% GOTS Organic</h4>
+            <p>Non-toxic botanical earth dyes</p>
+          </div>
         </div>
-        <div class="cs-teaser-pill">
+
+        <div class="cs-pillar-divider"></div>
+
+        <div class="cs-pillar-item">
           <i data-lucide="shield-check" class="fas fa-shield-check"></i>
-          <span>Choke-Safe Snaps</span>
+          <div class="cs-pillar-content">
+            <h4>Choke-Safe Snaps</h4>
+            <p>90-Newton high-tensile security</p>
+          </div>
         </div>
-        <div class="cs-teaser-pill">
+
+        <div class="cs-pillar-divider"></div>
+
+        <div class="cs-pillar-item">
           <i data-lucide="gift" class="fas fa-gift"></i>
-          <span>Heirloom Gift Box</span>
+          <div class="cs-pillar-content">
+            <h4>Heirloom Gift Unboxing</h4>
+            <p>Lavender keepsake packaging</p>
+          </div>
         </div>
       </div>
 
-      <div class="cs-action-links">
-        <a href="index.html" class="cs-link-btn cs-link-primary">
-          <i data-lucide="home" class="fas fa-house"></i>
-          <span>Return to Store</span>
-        </a>
-        <a href="products.html" class="cs-link-btn cs-link-secondary">
-          <i data-lucide="shopping-bag" class="fas fa-shopping-bag"></i>
-          <span>Explore In-Stock Collection</span>
-        </a>
-      </div>
+      <footer class="cs-footer-navigation">
+        <div class="cs-action-links">
+          <a href="index.html" class="cs-link-btn cs-link-primary">
+            <i data-lucide="home" class="fas fa-house"></i>
+            <span>Return to Boutique</span>
+          </a>
+          <a href="products.html" class="cs-link-btn cs-link-secondary">
+            <i data-lucide="shopping-bag" class="fas fa-shopping-bag"></i>
+            <span>Explore Current Catalog</span>
+          </a>
+        </div>
+        <p class="cs-copyright">&copy; 2026 Cuddle Cub Apparel Co. &middot; Handcrafted with pure organic care.</p>
+      </footer>
 
-      <p class="cs-copyright">&copy; 2026 Cuddle Cub Apparel Co. &middot; Handcrafted with pure organic care.</p>
     </main>
   </div>
 
