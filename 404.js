@@ -7,21 +7,6 @@ function init404Page() {
     window.lucide.createIcons();
   }
 
-  const searchForm = document.getElementById('errorSearchForm');
-  const searchInput = document.getElementById('errorSearchInput');
-
-  if (searchForm && searchInput) {
-    searchForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const query = searchInput.value.trim();
-      if (query) {
-        window.location.href = `products.html?search=${encodeURIComponent(query)}`;
-      } else {
-        window.location.href = 'products.html';
-      }
-    });
-  }
-
   const mascotBox = document.getElementById('errorMascotBox');
   if (mascotBox) {
     mascotBox.addEventListener('click', () => {
