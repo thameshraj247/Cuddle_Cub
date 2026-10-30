@@ -18,127 +18,80 @@
 </head>
 <body class="error-page-body">
 
-  <div class="error-404-wrapper">
+  <div class="error-404-screen">
     <div class="error-404-ambient-glow"></div>
 
-    <header class="error-404-topbar">
-      <a href="index.html" class="brand-logo" aria-label="Cuddle Cub Home">
-        <div class="brand-icon-wrap">
-          <img src="cuddle-cub-light-logo-hd.png" class="brand-logo-light" alt="Cuddle Cub Logo" width="46" height="46" />
-          <img src="cuddle-cub-dark-logo-hd.png" class="brand-logo-dark" alt="Cuddle Cub Logo" width="46" height="46" />
+    <div class="error-404-corner-controls">
+      <button class="theme-icon-btn dir-toggle-btn" id="dir-toggle-btn" aria-label="Toggle Page Direction" title="Toggle Page Direction (LTR / RTL)">
+        <i data-lucide="arrow-left-right" class="fas fa-right-left"></i>
+      </button>
+
+      <button class="theme-icon-btn theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Toggle Theme">
+        <i data-lucide="moon" class="fas fa-moon theme-icon"></i>
+      </button>
+    </div>
+
+    <main class="error-404-center-card">
+
+      <a href="index.html" class="error-center-brand" aria-label="Cuddle Cub Home">
+        <div class="error-center-logo-wrap">
+          <img src="cuddle-cub-light-logo-hd.png" class="brand-logo-light" alt="Cuddle Cub Logo" width="56" height="56" />
+          <img src="cuddle-cub-dark-logo-hd.png" class="brand-logo-dark" alt="Cuddle Cub Logo" width="56" height="56" />
         </div>
-        <div class="brand-text-block">
-          <span class="brand-text">Cuddle<span>Cub</span></span>
-          <span class="brand-tagline">"Cute. Comfy. Chic"</span>
+        <div class="error-center-brand-info">
+          <span class="error-center-brand-name">Cuddle<span>Cub</span></span>
+          <span class="error-center-brand-tagline">"Cute. Comfy. Chic"</span>
         </div>
       </a>
 
-      <div class="error-404-topbar-actions">
-        <button class="theme-icon-btn dir-toggle-btn" id="dir-toggle-btn" aria-label="Toggle Page Direction" title="Toggle Page Direction (LTR / RTL)">
-          <i data-lucide="arrow-left-right" class="fas fa-right-left"></i>
-        </button>
+      <div class="error-404-visual-wrap">
+        <span class="error-404-digit">4</span>
+        <div class="error-404-mascot-box" id="errorMascotBox" role="button" aria-label="Tap the cub mascot" tabindex="0">
+          <i data-lucide="footprints" class="fas fa-paw error-404-mascot-icon"></i>
+          <div class="error-404-floating-paw">
+            <i data-lucide="heart" class="fas fa-heart"></i>
+          </div>
+        </div>
+        <span class="error-404-digit">4</span>
+      </div>
 
-        <button class="theme-icon-btn theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Toggle Theme">
-          <i data-lucide="moon" class="fas fa-moon theme-icon"></i>
-        </button>
+      <span class="error-404-badge">
+        <i data-lucide="compass" class="fas fa-compass"></i> Lost in the Nursery Woods
+      </span>
 
-        <a href="index.html" class="error-topbar-home-btn" aria-label="Back to Home">
-          <i data-lucide="home" class="fas fa-house"></i>
-          <span>Home</span>
+      <h1 class="error-404-title">Our Little Cub Wandered Off</h1>
+      
+      <p class="error-404-subtitle">
+        The page you are looking for took a nap or wandered off the trail. Let's guide you back to our cloud-soft organic collections!
+      </p>
+
+      <form id="errorSearchForm" class="error-404-search-box">
+        <i data-lucide="search" class="fas fa-search error-404-search-icon"></i>
+        <input type="text" id="errorSearchInput" class="error-404-search-input" placeholder="Search rompers, knitwear, festive kurtas..." aria-label="Search nursery catalog" />
+        <button type="submit" class="error-404-search-btn">
+          <span>Search</span>
+          <i data-lucide="arrow-right" class="fas fa-arrow-right"></i>
+        </button>
+      </form>
+
+      <div class="error-404-btn-group">
+        <a href="index.html" class="btn btn-primary error-404-btn-primary">
+          <i data-lucide="home" class="fas fa-house"></i> Back to Home
+        </a>
+        <a href="products.html" class="btn btn-secondary error-404-btn-secondary">
+          <i data-lucide="shopping-bag" class="fas fa-shopping-bag"></i> Browse Catalog
         </a>
       </div>
-    </header>
 
-    <main class="error-404-main">
-      <div class="container error-404-container">
-        
-        <span class="error-404-badge">
-          <i data-lucide="compass" class="fas fa-compass"></i> Lost in the Nursery Woods
-        </span>
+      <nav class="error-404-quick-links" aria-label="Quick Navigation">
+        <a href="products.html" class="error-quick-pill"><i data-lucide="baby" class="fas fa-baby"></i> Newborn</a>
+        <a href="festive.html" class="error-quick-pill"><i data-lucide="crown" class="fas fa-crown"></i> Festive</a>
+        <a href="size-guide.html" class="error-quick-pill"><i data-lucide="ruler" class="fas fa-ruler-combined"></i> Size Guide</a>
+        <a href="contact.html" class="error-quick-pill"><i data-lucide="heart-handshake" class="fas fa-hand-holding-heart"></i> Contact</a>
+      </nav>
 
-        <div class="error-404-visual-wrap">
-          <span class="error-404-digit">4</span>
-          <div class="error-404-mascot-box" id="errorMascotBox" role="button" aria-label="Tap the cub mascot" tabindex="0">
-            <i data-lucide="footprints" class="fas fa-paw error-404-mascot-icon"></i>
-            <div class="error-404-floating-paw">
-              <i data-lucide="heart" class="fas fa-heart"></i>
-            </div>
-          </div>
-          <span class="error-404-digit">4</span>
-        </div>
-
-        <h1 class="error-404-title">Our Little Cub Wandered Off</h1>
-        
-        <p class="error-404-subtitle">
-          Even the most adventurous cubs lose their trail during playtime! This page might have drifted into a cozy nap, but our cloud-soft organic collections are right here.
-        </p>
-
-        <form id="errorSearchForm" class="error-404-search-box">
-          <i data-lucide="search" class="fas fa-search error-404-search-icon"></i>
-          <input type="text" id="errorSearchInput" class="error-404-search-input" placeholder="Search rompers, knitwear, festive kurtas..." aria-label="Search nursery catalog" />
-          <button type="submit" class="error-404-search-btn">
-            <span>Find Outfits</span>
-            <i data-lucide="arrow-right" class="fas fa-arrow-right"></i>
-          </button>
-        </form>
-
-        <div class="error-404-btn-group">
-          <a href="index.html" class="btn btn-primary error-404-btn-primary">
-            <i data-lucide="home" class="fas fa-house"></i> Back to Home Nursery
-          </a>
-          <a href="products.html" class="btn btn-secondary error-404-btn-secondary">
-            <i data-lucide="sparkles" class="fas fa-wand-magic-sparkles"></i> Explore Collections
-          </a>
-        </div>
-
-        <div class="error-404-destinations-divider">
-          <span>Or follow these warm nursery paths</span>
-        </div>
-
-        <div class="error-404-cards-grid">
-          <a href="products.html" class="error-destination-card">
-            <div class="error-card-icon-wrap">
-              <i data-lucide="baby" class="fas fa-baby"></i>
-            </div>
-            <h3 class="error-card-title">Newborn Essentials</h3>
-            <p class="error-card-desc">GOTS organic cotton waffle rompers, bodysuits & swaddles.</p>
-            <span class="error-card-link-arrow">Browse Layette <i class="fas fa-arrow-right"></i></span>
-          </a>
-
-          <a href="festive.html" class="error-destination-card">
-            <div class="error-card-icon-wrap">
-              <i data-lucide="crown" class="fas fa-crown"></i>
-            </div>
-            <h3 class="error-card-title">Festive Capsule</h3>
-            <p class="error-card-desc">Royal heritage brocade kurtas, waistcoats & velvet frocks.</p>
-            <span class="error-card-link-arrow">View Festive <i class="fas fa-arrow-right"></i></span>
-          </a>
-
-          <a href="size-guide.html" class="error-destination-card">
-            <div class="error-card-icon-wrap">
-              <i data-lucide="ruler" class="fas fa-ruler-combined"></i>
-            </div>
-            <h3 class="error-card-title">Smart Size Guide</h3>
-            <p class="error-card-desc">Tailored fit recommendations by weight, age & height.</p>
-            <span class="error-card-link-arrow">Calculate Fit <i class="fas fa-arrow-right"></i></span>
-          </a>
-
-          <a href="contact.html" class="error-destination-card">
-            <div class="error-card-icon-wrap">
-              <i data-lucide="heart-handshake" class="fas fa-hand-holding-heart"></i>
-            </div>
-            <h3 class="error-card-title">Parent Concierge</h3>
-            <p class="error-card-desc">Personal styling consultations & order tracking assistance.</p>
-            <span class="error-card-link-arrow">Get In Touch <i class="fas fa-arrow-right"></i></span>
-          </a>
-        </div>
-
-      </div>
-    </main>
-
-    <footer class="error-404-bottombar">
       <p class="error-404-copyright">&copy; 2026 Cuddle Cub Apparel Co. &middot; Handcrafted with pure organic care.</p>
-    </footer>
+    </main>
   </div>
 
   <script src="main.js"></script>
