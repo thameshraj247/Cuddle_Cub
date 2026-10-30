@@ -928,14 +928,12 @@
   box-shadow: 0 4px 12px rgba(46, 125, 90, 0.25);
 }
 
-align-items: center;
-
-font-size: 0.85rem;
-
-color: var(--text-muted);
-
-margin-bottom: 0.6rem;
-
+.card-header-meta {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
 }
 
 .product-age-chip {
@@ -2017,8 +2015,6 @@ transform: translateY(-50%) rotate(180deg);
   box-shadow: 0 4px 12px rgba(226, 169, 90, 0.3);
 }
 
-}
-
 [data-theme="dark"] .lookbook-item-contain img {
   background-color: #1a2720;
 
@@ -2067,6 +2063,7 @@ transform: translateY(-50%) rotate(180deg);
 
 [dir="rtl"] .hero-arrow-right:hover {
   transform: translateY(-50%) rotate(180deg) scale(1.12);
+}
 
 @media (max-width: 1200px) {
   .modern-catalog-grid {
@@ -2108,6 +2105,8 @@ transform: translateY(-50%) rotate(180deg);
 }
 
 .index-cta-banner {
-  background-image: url('cta-newborn-sleep.jpg');
+  background-image: url('cta-newborn-sleep.jpg') !important;
+  background-size: cover !important;
+  background-position: center center !important;
   margin-top: 4.5rem;
 }
