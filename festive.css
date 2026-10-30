@@ -1252,3 +1252,90 @@
     font-size: 2.8rem;
   }
 }
+
+.occasions-section {
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.occasion-card {
+  box-shadow: none !important;
+}
+
+.occasion-img-wrap {
+  height: 190px !important;
+}
+
+.occasion-body {
+  padding: 1.2rem !important;
+}
+
+.occasion-title {
+  font-size: 1.15rem;
+}
+
+.occasion-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.section-header-centered-25 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-header-centered-30 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.features-grid-festive {
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 1rem !important;
+}
+
+.festive-cta-banner {
+  background-image: url('festive-cta-couture-banner.jpg');
+}
+
+.categories-grid-3col {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.review-card {
+  padding: 2rem !important;
+}
+
+.review-rating {
+  margin-bottom: 0.8rem;
+}
+
+.review-quote {
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.review-author-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.review-avatar-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.review-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-location {
+  font-size: 0.82rem;
+  color: var(--text-light);
+}

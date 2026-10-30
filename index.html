@@ -14,6 +14,7 @@
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
   
   
   <link rel="stylesheet" href="global.css">
@@ -40,10 +41,10 @@
         <div class="nav-menu-container">
           <ul class="nav-menu">
             <li class="nav-dropdown-item">
-              <a href="index.html" class="nav-link active">Home <i class="fas fa-chevron-down"></i></a>
+              <a href="index.html" class="nav-link active">Home <i data-lucide="chevron-down" class="fas fa-chevron-down"></i></a>
               <ul class="dropdown-menu">
-                <li><a href="index.html" class="dropdown-link active"><i class="fas fa-store"></i> Home 1</a></li>
-                <li><a href="home-2.html" class="dropdown-link"><i class="fas fa-wand-magic-sparkles"></i> Home 2</a></li>
+                <li><a href="index.html" class="dropdown-link active"><i data-lucide="store" class="fas fa-store"></i> Home 1</a></li>
+                <li><a href="home-2.html" class="dropdown-link"><i data-lucide="sparkles" class="fas fa-wand-magic-sparkles"></i> Home 2</a></li>
               </ul>
             </li>
             <li><a href="about.html" class="nav-link ">About Us</a></li>
@@ -58,23 +59,23 @@
         <div class="nav-actions">
           
           <button class="theme-icon-btn dir-toggle-btn" id="dir-toggle-btn" aria-label="Toggle Page Direction" title="Toggle Page Direction (LTR / RTL)">
-            <i class="fas fa-right-left"></i>
+            <i data-lucide="arrow-left-right" class="fas fa-right-left"></i>
           </button>
 
           
           <button class="theme-icon-btn theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Toggle Theme">
-            <i class="fas fa-moon theme-icon"></i>
+            <i data-lucide="moon" class="fas fa-moon theme-icon"></i>
           </button>
 
           
           <a href="products.html" class="header-login-btn" aria-label="Shop Now">
-            <i class="fas fa-shopping-bag"></i>
+            <i data-lucide="shopping-bag" class="fas fa-shopping-bag"></i>
             <span>Shop Now</span>
           </a>
 
           
           <button class="action-btn mobile-toggle" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
+            <i data-lucide="menu" class="fas fa-bars"></i>
           </button>
         </div>
       </nav>
@@ -88,7 +89,7 @@
         <div class="hero-grid">
           <div class="hero-content">
             <span class="hero-tag">
-              <i class="fas fa-heart"></i> Gentle on delicate skin, kind to nature
+              <i data-lucide="heart" class="fas fa-heart"></i> Gentle on delicate skin, kind to nature
             </span>
             <h1 class="hero-title">
               Pure Comfort for your <em>Little Sunshine</em>.
@@ -98,10 +99,10 @@
             </p>
             <div class="hero-cta">
               <a href="products.html" class="btn btn-primary">
-                Explore Collections <i class="fas fa-arrow-right"></i>
+                Explore Collections <i data-lucide="arrow-right" class="fas fa-arrow-right"></i>
               </a>
               <a href="festive.html" class="btn btn-secondary">
-                <i class="fas fa-crown" style="color:var(--color-accent)"></i> Festive Edition
+                <i data-lucide="crown" class="fas fa-crown hero-btn-crown"></i> Festive Edition
               </a>
             </div>
             <div class="hero-stats">
@@ -125,9 +126,9 @@
             <div class="hero-dress-showcase" id="heroDressShowcase">
               <div class="ambient-glow"></div>
               <div class="ambient-pedestal"></div>
-              <div class="sparkle sparkle-1"><i class="fas fa-wand-magic-sparkles"></i></div>
-              <div class="sparkle sparkle-2"><i class="fas fa-star"></i></div>
-              <div class="sparkle sparkle-3"><i class="fas fa-heart"></i></div>
+              <div class="sparkle sparkle-1"><i data-lucide="sparkles" class="fas fa-wand-magic-sparkles"></i></div>
+              <div class="sparkle sparkle-2"><i data-lucide="star" class="fas fa-star"></i></div>
+              <div class="sparkle sparkle-3"><i data-lucide="heart" class="fas fa-heart"></i></div>
 
               
               <div class="dress-slide active" data-index="0">
@@ -253,10 +254,10 @@
 
               
               <button class="hero-dress-arrow hero-arrow-left prev-dress" aria-label="Previous outfit" title="Previous outfit">
-                <i class="fas fa-chevron-left"></i>
+                <i data-lucide="chevron-left" class="fas fa-chevron-left"></i>
               </button>
               <button class="hero-dress-arrow hero-arrow-right next-dress" aria-label="Next outfit" title="Next outfit">
-                <i class="fas fa-chevron-right"></i>
+                <i data-lucide="chevron-right" class="fas fa-chevron-right"></i>
               </button>
             </div>
 
@@ -329,14 +330,14 @@
             </div>
             <div class="bento-content">
               <div class="bento-top-meta">
-                <span class="bento-chip"><i class="fas fa-baby"></i> 0 - 6 Months</span>
+                <span class="bento-chip"><i data-lucide="baby" class="fas fa-baby"></i> 0 - 6 Months</span>
                 <span class="bento-pill-accent">Most Loved</span>
               </div>
               <div class="bento-bottom-text">
                 <h3>Tiny Newborns & Layette</h3>
                 <p>Pure organic kimono wraps, scratch-free mittens, cloud swaddles, and ultra-gentle footed sleepers designed for sensitive newborn skin.</p>
                 <div class="bento-action-row">
-                  <a href="products.html?age=newborn" class="bento-btn">Shop Newborns <i class="fas fa-arrow-right"></i></a>
+                  <a href="products.html?age=newborn" class="bento-btn">Shop Newborns <i data-lucide="arrow-right" class="fas fa-arrow-right"></i></a>
                   <span class="bento-stat-tag">45+ Essentials</span>
                 </div>
               </div>
@@ -351,12 +352,12 @@
             </div>
             <div class="bento-content">
               <div class="bento-top-meta">
-                <span class="bento-chip"><i class="fas fa-heart"></i> 6 - 12 Months</span>
+                <span class="bento-chip"><i data-lucide="heart" class="fas fa-heart"></i> 6 - 12 Months</span>
               </div>
               <div class="bento-bottom-text">
                 <h3>Crawling Babies</h3>
                 <p>Reinforced double-knees, diaper-stretch flex pants, and snap-bottom ribbed bodysuits.</p>
-                <a href="products.html?age=infant" class="bento-btn bento-btn-sm">Shop Crawlers <i class="fas fa-arrow-right"></i></a>
+                <a href="products.html?age=infant" class="bento-btn bento-btn-sm">Shop Crawlers <i data-lucide="arrow-right" class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -369,12 +370,12 @@
             </div>
             <div class="bento-content">
               <div class="bento-top-meta">
-                <span class="bento-chip"><i class="fas fa-sun"></i> 1 - 3 Years</span>
+                <span class="bento-chip"><i data-lucide="sun" class="fas fa-sun"></i> 1 - 3 Years</span>
               </div>
               <div class="bento-bottom-text">
                 <h3>Lively Toddlers</h3>
                 <p>Breathable linen play sets, flexible dungarees, and easy-dress elasticized waists.</p>
-                <a href="products.html?age=toddler" class="bento-btn bento-btn-sm">Shop Toddlers <i class="fas fa-arrow-right"></i></a>
+                <a href="products.html?age=toddler" class="bento-btn bento-btn-sm">Shop Toddlers <i data-lucide="arrow-right" class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -387,14 +388,14 @@
             </div>
             <div class="bento-content bento-content-horizontal">
               <div class="bento-top-meta">
-                <span class="bento-chip"><i class="fas fa-sparkles"></i> 3 - 6 Years</span>
+                <span class="bento-chip"><i data-lucide="sparkles" class="fas fa-sparkles"></i> 3 - 6 Years</span>
                 <span class="bento-pill-accent">Milestone Collection</span>
               </div>
               <div class="bento-bottom-text">
                 <h3>Curious Kids & Heritage Playwear</h3>
                 <p>Refined twirl-worthy prairie frocks, breathable mandarin collar shirts, and durable adventure dungarees built to last.</p>
                 <div class="bento-action-row">
-                  <a href="products.html?age=kids" class="bento-btn">Explore Little Kids <i class="fas fa-arrow-right"></i></a>
+                  <a href="products.html?age=kids" class="bento-btn">Explore Little Kids <i data-lucide="arrow-right" class="fas fa-arrow-right"></i></a>
                   <span class="bento-stat-tag">Heirloom Quality</span>
                 </div>
               </div>
@@ -418,23 +419,23 @@
           <div class="catalog-card" data-id="1" data-category="rompers" data-age="0-12m">
             <div class="card-visual-box">
               <div class="product-badge-group">
-                <span class="modern-tag tag-exclusive"><i class="fas fa-crown"></i> Signature Piece</span>
+                <span class="modern-tag tag-exclusive"><i data-lucide="crown" class="fas fa-crown"></i> Signature Piece</span>
                 <span class="modern-tag tag-organic">GOTS Certified</span>
               </div>
               <img src="cta-newborn-sleep.jpg" alt="Sweet newborn baby sleeping peacefully in organic cotton footed sleeper" class="card-main-img" />
               <div class="quick-hover-bar">
-                <span class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</span>
+                <span class="quick-view-btn"><i data-lucide="eye" class="fas fa-eye"></i> Quick View</span>
               </div>
             </div>
             <div class="card-details-box">
               <div class="card-header-meta">
-                <span class="age-label"><i class="fas fa-baby"></i> 0 - 6 Months</span>
-                <div class="star-rating"><i class="fas fa-star"></i> 4.9 <span class="rating-count">(128)</span></div>
+                <span class="age-label"><i data-lucide="baby" class="fas fa-baby"></i> 0 - 6 Months</span>
+                <div class="star-rating"><i data-lucide="star" class="fas fa-star"></i> 4.9 <span class="rating-count">(128)</span></div>
               </div>
               <h3 class="card-item-title">Organic Ribbed Forest Romper</h3>
               <p class="card-item-desc">100% GOTS organic waffle cotton knit featuring genuine coconut shell buttons and flatlock comfort seams.</p>
               <div class="card-pricing-row">
-                <a href="products.html?age=newborn" class="modern-view-btn"><i class="fas fa-arrow-up-right-from-square"></i> View More</a>
+                <a href="products.html?age=newborn" class="modern-view-btn"><i data-lucide="external-link" class="fas fa-arrow-up-right-from-square"></i> View More</a>
               </div>
             </div>
           </div>
@@ -447,18 +448,18 @@
               </div>
               <img src="prod-forest-bear-overalls.jpg" alt="Organic sage green corduroy bear overalls and patterned long-sleeve tee set" class="card-main-img" />
               <div class="quick-hover-bar">
-                <span class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</span>
+                <span class="quick-view-btn"><i data-lucide="eye" class="fas fa-eye"></i> Quick View</span>
               </div>
             </div>
             <div class="card-details-box">
               <div class="card-header-meta">
-                <span class="age-label"><i class="fas fa-seedling"></i> 6 - 12 Months</span>
-                <div class="star-rating"><i class="fas fa-star"></i> 4.8 <span class="rating-count">(82)</span></div>
+                <span class="age-label"><i data-lucide="sprout" class="fas fa-seedling"></i> 6 - 12 Months</span>
+                <div class="star-rating"><i data-lucide="star" class="fas fa-star"></i> 4.8 <span class="rating-count">(82)</span></div>
               </div>
               <h3 class="card-item-title">Sage Overalls & Striped Tee Set</h3>
               <p class="card-item-desc">Pure combed slub cotton with dual button strap adjusters and roomy diaper-friendly gusset.</p>
               <div class="card-pricing-row">
-                <a href="products.html?age=infant" class="modern-view-btn"><i class="fas fa-arrow-up-right-from-square"></i> View More</a>
+                <a href="products.html?age=infant" class="modern-view-btn"><i data-lucide="external-link" class="fas fa-arrow-up-right-from-square"></i> View More</a>
               </div>
             </div>
           </div>
@@ -471,18 +472,18 @@
               </div>
               <img src="prod-cream-dress.jpg" alt="Warm Cream Prairie Ruffle Dress with tiered hem and bow waist" class="card-main-img" />
               <div class="quick-hover-bar">
-                <span class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</span>
+                <span class="quick-view-btn"><i data-lucide="eye" class="fas fa-eye"></i> Quick View</span>
               </div>
             </div>
             <div class="card-details-box">
               <div class="card-header-meta">
-                <span class="age-label"><i class="fas fa-sun"></i> 1 - 3 Years</span>
-                <div class="star-rating"><i class="fas fa-star"></i> 5.0 <span class="rating-count">(94)</span></div>
+                <span class="age-label"><i data-lucide="sun" class="fas fa-sun"></i> 1 - 3 Years</span>
+                <div class="star-rating"><i data-lucide="star" class="fas fa-star"></i> 5.0 <span class="rating-count">(94)</span></div>
               </div>
               <h3 class="card-item-title">Warm Cream Prairie Ruffle Dress</h3>
               <p class="card-item-desc">Breathable Belgian linen-cotton blend with heirloom scalloped lace hem and button-back neck.</p>
               <div class="card-pricing-row">
-                <a href="products.html?age=toddler" class="modern-view-btn"><i class="fas fa-arrow-up-right-from-square"></i> View More</a>
+                <a href="products.html?age=toddler" class="modern-view-btn"><i data-lucide="external-link" class="fas fa-arrow-up-right-from-square"></i> View More</a>
               </div>
             </div>
           </div>
@@ -495,25 +496,25 @@
               </div>
               <img src="festive-hero-girl.jpg" alt="Smiling young girl wearing beautiful festive twirl dress" class="card-main-img" />
               <div class="quick-hover-bar">
-                <span class="quick-view-btn"><i class="fas fa-eye"></i> Quick View</span>
+                <span class="quick-view-btn"><i data-lucide="eye" class="fas fa-eye"></i> Quick View</span>
               </div>
             </div>
             <div class="card-details-box">
               <div class="card-header-meta">
-                <span class="age-label"><i class="fas fa-sparkles"></i> 3 - 6 Years</span>
-                <div class="star-rating"><i class="fas fa-star"></i> 4.9 <span class="rating-count">(115)</span></div>
+                <span class="age-label"><i data-lucide="sparkles" class="fas fa-sparkles"></i> 3 - 6 Years</span>
+                <div class="star-rating"><i data-lucide="star" class="fas fa-star"></i> 4.9 <span class="rating-count">(115)</span></div>
               </div>
               <h3 class="card-item-title">Forest Meadow Bamboo Sleeper</h3>
               <p class="card-item-desc">Thermo-regulating bamboo viscose with 2-way diaper zip and fold-over mitten cuffs.</p>
               <div class="card-pricing-row">
-                <a href="products.html?age=kids" class="modern-view-btn"><i class="fas fa-arrow-up-right-from-square"></i> View More</a>
+                <a href="products.html?age=kids" class="modern-view-btn"><i data-lucide="external-link" class="fas fa-arrow-up-right-from-square"></i> View More</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="text-center" style="margin-top: 3.5rem;">
-          <a href="products.html" class="btn btn-primary">Browse Complete Catalog <i class="fas fa-arrow-right"></i></a>
+        <div class="text-center index-cta-more-wrap">
+          <a href="products.html" class="btn btn-primary">Browse Complete Catalog <i data-lucide="arrow-right" class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </section>
@@ -525,17 +526,17 @@
           <div class="festive-grid">
             
             <div class="festive-content">
-              <span class="festive-chip" style="margin-bottom: 1.5rem;"><i class="fas fa-crown"></i> Heirloom Celebration Edition</span>
+              <span class="festive-chip festive-chip-spaced"><i data-lucide="crown" class="fas fa-crown"></i> Heirloom Celebration Edition</span>
               <h2>Heirloom Grace for <em>Cherished Festivals</em></h2>
               <p>
                 From family reunions and holiday feasts to birthday celebrations, dress your young stars in hand-embroidered silks, royal brocades, and soothing organic velvets with zero scratchy irritation.
               </p>
               <div class="festive-highlights">
-                <span class="festive-chip"><i class="fas fa-gem"></i> Hand-Embroidered</span>
-                <span class="festive-chip"><i class="fas fa-feather"></i> 100% Skin-Friendly Linings</span>
+                <span class="festive-chip"><i data-lucide="gem" class="fas fa-gem"></i> Hand-Embroidered</span>
+                <span class="festive-chip"><i data-lucide="feather" class="fas fa-feather"></i> 100% Skin-Friendly Linings</span>
               </div>
               <a href="festive.html" class="btn btn-accent">
-                Explore Festive Collection <i class="fas fa-wand-magic-sparkles"></i>
+                Explore Festive Collection <i data-lucide="sparkles" class="fas fa-wand-magic-sparkles"></i>
               </a>
             </div>
 
@@ -624,7 +625,7 @@
     </section>
 
     
-    <section class="section" style="background-color: var(--color-secondary);">
+    <section class="section section-secondary">
       <div class="container">
         <div class="section-header">
           <span class="section-badge">Moments In Cuddle Cub</span>
@@ -685,7 +686,7 @@
           <div class="marquee-track">
             
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"My baby has sensitive eczema skin. Cuddle Cub's organic green sleepers don't cause any redness. Incredible quality!"</p>
               <div class="review-author-row">
                 <img src="review-sarah.jpg" alt="Sarah Mitchell" class="review-author-img" />
@@ -698,7 +699,7 @@
 
             
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"The festive outfit for our daughter's first birthday was breathtaking. Luxury couture feel but soft as pajamas!"</p>
               <div class="review-author-row">
                 <img src="review-ananya.jpg" alt="Ananya Kapoor" class="review-author-img" />
@@ -711,7 +712,7 @@
 
             
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"Washes like a dream without losing its forest green color or buttery softness. The size calculator was spot-on."</p>
               <div class="review-author-row">
                 <img src="review-sarah.jpg" alt="David Reynolds" class="review-author-img" />
@@ -724,7 +725,7 @@
 
             
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"The 2-way diaper zip on the bamboo sleeper saves us every midnight. Pure genius design and ultra soft."</p>
               <div class="review-author-row">
                 <img src="review-ananya.jpg" alt="Elena Rostova" class="review-author-img" />
@@ -737,7 +738,7 @@
 
             
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"My baby has sensitive eczema skin. Cuddle Cub's organic green sleepers don't cause any redness. Incredible quality!"</p>
               <div class="review-author-row">
                 <img src="review-sarah.jpg" alt="Sarah Mitchell" class="review-author-img" />
@@ -749,7 +750,7 @@
             </div>
 
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"The festive outfit for our daughter's first birthday was breathtaking. Luxury couture feel but soft as pajamas!"</p>
               <div class="review-author-row">
                 <img src="review-ananya.jpg" alt="Ananya Kapoor" class="review-author-img" />
@@ -761,7 +762,7 @@
             </div>
 
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"Washes like a dream without losing its forest green color or buttery softness. The size calculator was spot-on."</p>
               <div class="review-author-row">
                 <img src="review-sarah.jpg" alt="David Reynolds" class="review-author-img" />
@@ -773,7 +774,7 @@
             </div>
 
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"The 2-way diaper zip on the bamboo sleeper saves us every midnight. Pure genius design and ultra soft."</p>
               <div class="review-author-row">
                 <img src="review-ananya.jpg" alt="Elena Rostova" class="review-author-img" />
@@ -791,7 +792,7 @@
           <div class="marquee-track">
             
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"The reinforced double knees on the toddler overalls survived all sandbox adventures without a fray. Outstanding!"</p>
               <div class="review-author-row">
                 <img src="review-jessica.jpg" alt="Marcus Vance" class="review-author-img" />
@@ -804,7 +805,7 @@
 
             
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"Ordered the kimono onesies for newborn twins. Super easy dressing and zero scratches from internal tags."</p>
               <div class="review-author-row">
                 <img src="review-sarah.jpg" alt="Claire Dubois" class="review-author-img" />
@@ -817,7 +818,7 @@
 
             
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"Living in humid weather, finding breathable linen that doesn't itch was impossible until Cuddle Cub. Love it!"</p>
               <div class="review-author-row">
                 <img src="review-ananya.jpg" alt="Pooja Sharma" class="review-author-img" />
@@ -830,7 +831,7 @@
 
             
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"The plastic-free packaging smelled like dried lavender. You can genuinely feel the care in every seam."</p>
               <div class="review-author-row">
                 <img src="review-jessica.jpg" alt="Jessica Taylor" class="review-author-img" />
@@ -843,7 +844,7 @@
 
             
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"The reinforced double knees on the toddler overalls survived all sandbox adventures without a fray. Outstanding!"</p>
               <div class="review-author-row">
                 <img src="review-jessica.jpg" alt="Marcus Vance" class="review-author-img" />
@@ -855,7 +856,7 @@
             </div>
 
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"Ordered the kimono onesies for newborn twins. Super easy dressing and zero scratches from internal tags."</p>
               <div class="review-author-row">
                 <img src="review-sarah.jpg" alt="Claire Dubois" class="review-author-img" />
@@ -867,7 +868,7 @@
             </div>
 
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"Living in humid weather, finding breathable linen that doesn't itch was impossible until Cuddle Cub. Love it!"</p>
               <div class="review-author-row">
                 <img src="review-ananya.jpg" alt="Pooja Sharma" class="review-author-img" />
@@ -879,7 +880,7 @@
             </div>
 
             <div class="review-slide-card">
-              <div class="review-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+              <div class="review-card-stars"><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i><i data-lucide="star" class="fas fa-star"></i></div>
               <p class="review-quote">"The plastic-free packaging smelled like dried lavender. You can genuinely feel the care in every seam."</p>
               <div class="review-author-row">
                 <img src="review-jessica.jpg" alt="Jessica Taylor" class="review-author-img" />
@@ -896,20 +897,20 @@
       <div class="container">
 
         
-        <div class="cta-bg-banner" style="background-image: url('cta-newborn-sleep.jpg'); margin-top: 4.5rem;">
+        <div class="cta-bg-banner index-cta-banner">
           <div class="cta-bg-overlay"></div>
           <div class="cta-bg-inner">
-            <span class="section-badge" style="background: rgba(255,255,255,0.18); color: #fdfbf7; border-color: rgba(255,255,255,0.3); margin-bottom: 1.2rem;">
-              <i class="fas fa-seedling"></i> Welcome To The Family
+            <span class="section-badge cta-badge-overlay">
+              <i data-lucide="sprout" class="fas fa-seedling"></i> Welcome To The Family
             </span>
             <h2>Wrap Your Little Miracle In <em>Pure Organic Comfort</em></h2>
             <p>Join over 50,000 conscious parents who choose toxic-free, certified organic cotton clothing that protects both tender skin and our planet.</p>
-            <div class="cta-btn-group" style="justify-content: center;">
+            <div class="cta-btn-group cta-btn-group-center">
               <a href="products.html" class="btn btn-primary">
-                <i class="fas fa-shopping-bag"></i> Shop New Season
+                <i data-lucide="shopping-bag" class="fas fa-shopping-bag"></i> Shop New Season
               </a>
               <a href="about.html" class="btn btn-secondary">
-                <i class="fas fa-heart"></i> Our Story
+                <i data-lucide="heart" class="fas fa-heart"></i> Our Story
               </a>
             </div>
           </div>
@@ -923,7 +924,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-about">
-          <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;">
+          <a href="index.html" class="brand-logo footer-brand-logo">
             <div class="brand-icon-wrap"><img src="cuddle-cub-light-logo-hd.png" class="brand-logo-light" alt="Cuddle Cub Logo" width="52" height="52" /><img src="cuddle-cub-dark-logo-hd.png" class="brand-logo-dark" alt="Cuddle Cub Logo" width="52" height="52" /></div>
             <div class="brand-text-block">
               <span class="brand-text">Cuddle<span>Cub</span></span>
@@ -932,10 +933,10 @@
           </a>
           <p>Handcrafting joyous childhood memories through breathable, organic, heirloom fabrics in harmonious forest greens and gentle creams.</p>
           <div class="social-links">
-            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
-            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram" class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i data-lucide="pin" class="fab fa-pinterest"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i data-lucide="facebook" class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="TikTok"><i data-lucide="video" class="fab fa-tiktok"></i></a>
           </div>
         </div>
 
@@ -977,11 +978,11 @@
 
         <div>
           <h4 class="footer-title">Join The Cub Family</h4>
-          <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:1rem; line-height: 1.5;">Subscribe for parenting guides, nursery styling tips, and new seasonal drops.</p>
+          <p class="footer-newsletter-text">Subscribe for parenting guides, nursery styling tips, and new seasonal drops.</p>
           <form id="newsletter-form" class="newsletter-box">
             <input type="email" placeholder="Your email address" required aria-label="Email address" />
             <button type="submit" class="newsletter-submit-icon-btn" aria-label="Subscribe">
-              <i class="fas fa-arrow-right"></i>
+              <i data-lucide="arrow-right" class="fas fa-arrow-right"></i>
             </button>
           </form>
         </div>
@@ -989,7 +990,7 @@
 
       <div class="footer-bottom">
         <p>&copy; 2026 Cuddle Cub Apparel Co. All rights reserved.</p>
-        <div style="display:flex; gap:1.5rem;">
+        <div class="footer-legal-links">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
           <a href="#">Ethical Sourcing</a>
@@ -1002,8 +1003,8 @@
   <div class="cart-drawer-overlay"></div>
   <div class="cart-drawer">
     <div class="cart-header">
-      <h3 style="font-size:1.35rem;">Your Shopping Bag</h3>
-      <button class="action-btn close-cart-btn" aria-label="Close Shopping Bag"><i class="fas fa-times"></i></button>
+      <h3 class="cart-header-title">Your Shopping Bag</h3>
+      <button class="action-btn close-cart-btn" aria-label="Close Shopping Bag"><i data-lucide="x" class="fas fa-times"></i></button>
     </div>
     <div class="cart-body cart-items-container"></div>
     <div class="cart-footer">
@@ -1011,8 +1012,8 @@
         <span>Subtotal</span>
         <span class="cart-subtotal-val">$34.00</span>
       </div>
-      <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1rem;">Taxes and shipping calculated at checkout.</p>
-      <button class="btn btn-primary cart-buy-btn" style="width:100%; font-weight:700;" onclick="handleBuyNow()"><i class="fas fa-lock" style="margin-right:0.4rem; font-size:0.85rem;"></i> Buy Now</button>
+      <p class="cart-disclaimer-text">Taxes and shipping calculated at checkout.</p>
+      <button class="btn btn-primary cart-buy-btn" onclick="handleBuyNow()"><i data-lucide="lock" class="fas fa-lock cart-lock-icon"></i> Buy Now</button>
     </div>
   </div>
 

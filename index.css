@@ -2094,3 +2094,20 @@ transform: translateY(-50%) rotate(180deg);
     grid-template-columns: 1fr;
   }
 }
+
+.hero-btn-crown {
+  color: var(--color-accent);
+}
+
+.index-cta-more-wrap {
+  margin-top: 3.5rem;
+}
+
+.festive-chip-spaced {
+  margin-bottom: 1.5rem;
+}
+
+.index-cta-banner {
+  background-image: url('cta-newborn-sleep.jpg');
+  margin-top: 4.5rem;
+}

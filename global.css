@@ -2301,3 +2301,59 @@ button, input, select, textarea {
   }
 }
 
+
+.section-secondary {
+  background-color: var(--color-secondary);
+}
+
+.hero-container-elevated {
+  position: relative;
+  z-index: 5;
+}
+
+.cta-badge-overlay {
+  background: rgba(255, 255, 255, 0.18) !important;
+  color: #fdfbf7 !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  margin-bottom: 1.2rem !important;
+}
+
+.cta-btn-group-center {
+  justify-content: center !important;
+}
+
+.footer-brand-logo {
+  margin-bottom: 1rem;
+}
+
+.footer-newsletter-text {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.cart-header-title {
+  font-size: 1.35rem;
+}
+
+.cart-disclaimer-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.cart-buy-btn {
+  width: 100% !important;
+  font-weight: 700 !important;
+}
+
+.cart-lock-icon {
+  margin-right: 0.4rem;
+  font-size: 0.85rem;
+}

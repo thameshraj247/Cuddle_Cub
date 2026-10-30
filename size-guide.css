@@ -898,3 +898,104 @@
     gap: 0.75rem;
   }
 }
+
+.size-guide-hero-title {
+  margin-bottom: 1.25rem;
+}
+
+.size-guide-hero-desc {
+  margin-bottom: 2.2rem;
+}
+
+.size-calc-pills-row {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.size-calc-header-wrap {
+  margin-bottom: 1.8rem;
+}
+
+.size-calc-title {
+  font-size: 1.7rem;
+  margin-bottom: 0.4rem;
+}
+
+.size-calc-title-icon {
+  color: var(--color-primary);
+  margin-right: 0.5rem;
+}
+
+.size-calc-subtitle {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.calc-submit-btn {
+  height: 42px !important;
+  padding: 0.5rem 1.4rem !important;
+}
+
+.size-result-card-init {
+  display: none;
+  margin-top: 2rem;
+}
+
+.calc-result-badge-label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.calc-result-advice-text {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-top: 0.4rem;
+}
+
+.section-header-spaced-center {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.features-grid-1col {
+  grid-template-columns: 1fr !important;
+  gap: 1.2rem !important;
+}
+
+.categories-grid-3col {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.size-tip-card {
+  padding: 2.2rem !important;
+}
+
+.size-tip-icon-wrap {
+  width: 64px !important;
+  height: 64px !important;
+  margin-bottom: 1.2rem !important;
+}
+
+.size-tip-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.size-tip-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.size-guide-cta-section {
+  padding: 4.5rem 0 !important;
+}
+
+.size-guide-cta-banner {
+  background-image: url('cta-luxury-organic-family.jpg');
+}

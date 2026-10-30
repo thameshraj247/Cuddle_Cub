@@ -2005,3 +2005,53 @@ body.cursor-hover .custom-cursor-dot {
     animation: none !important;
   }
 }
+
+.btn-hero-lg {
+  padding: 1rem 2.4rem !important;
+  font-size: 1.05rem !important;
+}
+
+.btn-hero-sec-lg {
+  padding: 1rem 2.2rem !important;
+  font-size: 1.05rem !important;
+}
+
+.philosophy-bg-soil {
+  background-image: url('philosophy-soil-purity.jpg');
+}
+
+.philosophy-bg-seams {
+  background-image: url('philosophy-stitching-seams.jpg');
+}
+
+.philosophy-bg-longevity {
+  background-image: url('philosophy-heirloom-longevity.jpg');
+}
+
+.section-header-centered {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.home2-cta-banner {
+  background-image: url('cta-luxury-organic-family.jpg');
+}
+
+.home2-cta-title {
+  font-size: 3.5rem;
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+}
+
+.home2-cta-text {
+  font-size: 1.2rem;
+  max-width: 680px;
+  margin: 0 auto 2.5rem;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.7;
+}
+
+.home2-cta-btn-group {
+  justify-content: center;
+  gap: 1.25rem;
+}

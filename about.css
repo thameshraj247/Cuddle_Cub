@@ -1031,3 +1031,97 @@
     display: none;
   }
 }
+
+.workshop-section {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.workshop-card {
+  box-shadow: none !important;
+}
+
+.workshop-img-wrap {
+  height: 190px !important;
+}
+
+.workshop-body {
+  padding: 1.2rem !important;
+}
+
+.workshop-title {
+  font-size: 1.15rem;
+}
+
+.workshop-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.section-header-left-full {
+  text-align: left;
+  margin: 0 0 1.5rem 0;
+  max-width: 100%;
+}
+
+.subtitle-no-margin {
+  margin: 0 !important;
+}
+
+.categories-grid-3col {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.pillar-card {
+  padding: 2.5rem !important;
+}
+
+.pillar-icon-wrap {
+  width: 64px !important;
+  height: 64px !important;
+  margin-bottom: 1.2rem !important;
+}
+
+.pillar-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.pillar-desc {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.section-header-centered-780 {
+  max-width: 780px;
+  margin: 0 auto 3.5rem auto;
+  text-align: center;
+}
+
+.aurora-bg-reforest {
+  background-image: url('about-reforestation-forest-trees.jpg');
+}
+
+.aurora-bg-plantdye {
+  background-image: url('about-plant-dye.jpg');
+}
+
+.aurora-bg-cotton {
+  background-image: url('about-cotton-harvest.jpg');
+}
+
+.aurora-bg-packaging {
+  background-image: url('about-compostable-eco-packaging.jpg');
+}
+
+.about-cta-section {
+  background-color: var(--color-secondary) !important;
+  padding: 5rem 0 !important;
+}
+
+.section-badge-fit {
+  width: fit-content;
+  margin-bottom: 1rem;
+}
