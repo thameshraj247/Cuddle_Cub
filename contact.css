@@ -800,3 +800,40 @@
 .contact-cta-banner {
   background-image: url('boutique-storefront-ultra-hd.jpg');
 }
+
+.contact-success-msg {
+  display: none;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.1rem;
+  padding: 0.95rem 1.25rem;
+  background: rgba(30, 70, 53, 0.08);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.5;
+  animation: contactSuccessFadeUp 0.35s ease forwards;
+}
+
+.contact-success-msg.show {
+  display: flex;
+}
+
+@keyframes contactSuccessFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-theme="dark"] .contact-success-msg {
+  background: rgba(116, 198, 157, 0.12);
+  border-color: #74c69d;
+  color: #95d5b2;
+}
