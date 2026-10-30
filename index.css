@@ -457,8 +457,8 @@
 }
 
 .badge-bottom .badge-icon {
-  background: #fff3e0;
-  color: #e65100;
+  background: var(--color-primary-subtle);
+  color: var(--color-primary);
 }
 
 @keyframes floatSlow {
@@ -784,9 +784,9 @@
 
 .modern-tag.tag-organic { background: #2e7d32; color: #fff; }
 
-.modern-tag.tag-hot { background: #d97736; color: #fff; }
+.modern-tag.tag-hot { background: var(--color-primary); color: var(--color-secondary); }
 
-.modern-tag.tag-new { background: #1976d2; color: #fff; }
+.modern-tag.tag-new { background: var(--color-primary-light); color: var(--color-secondary); }
 
 .quick-hover-bar {
   position: absolute;
@@ -845,7 +845,7 @@
 }
 
 .star-rating {
-  color: #e59819;
+  color: var(--color-primary);
   font-weight: 700;
   font-size: 0.84rem;
 }
@@ -952,7 +952,7 @@ font-size: 0.78rem;
 }
 
 .product-rating {
-  color: #f59e0b;
+  color: var(--color-primary);
 
 display: inline-flex;
 
@@ -1132,7 +1132,7 @@ margin-bottom: 1.2rem;
 }
 
 .festive-content h2 em {
-  color: #f7d08a;
+  color: var(--color-secondary);
 
 font-style: italic;
 
@@ -1200,7 +1200,7 @@ font-size: 0.85rem;
 
 line-height: 1;
 
-color: #f7d08a;
+color: var(--color-secondary);
 
 }
 
@@ -1469,7 +1469,7 @@ margin-bottom: 0.2rem;
 .lookbook-overlay span {
   font-size: 0.85rem;
 
-color: #f7d08a;
+color: var(--color-secondary);
 
 font-weight: 600;
 
@@ -1646,7 +1646,7 @@ align-items: center;
 
 gap: 0.25rem;
 
-color: #f59e0b;
+color: var(--color-primary);
 
 font-size: 0.85rem;
 

@@ -464,12 +464,12 @@
 
 .style-glass-pills .size-pill-diaper .pill-icon-box {
   background: rgba(217, 119, 54, 0.12);
-  color: #d97736;
+  color: var(--color-primary);
   border: 1px solid rgba(217, 119, 54, 0.22);
 }
 
 .style-glass-pills .size-pill-diaper:hover {
-  border-color: #d97736;
+  border-color: var(--color-primary);
 }
 
 .style-glass-pills .size-pill-exchange .pill-icon-box {
@@ -544,7 +544,7 @@
 }
 
 .style-ribbon-bar .size-pill-diaper .pill-icon-box {
-  color: #d97736;
+  color: var(--color-primary);
 }
 
 .style-ribbon-bar .size-pill-exchange .pill-icon-box {
@@ -600,7 +600,7 @@
 }
 
 .style-floating-cards .size-pill-diaper::before {
-  background: #d97736;
+  background: var(--color-primary);
 }
 
 .style-floating-cards .size-pill-exchange::before {
@@ -618,7 +618,7 @@
 }
 
 .style-floating-cards .size-pill-diaper .pill-icon-box {
-  color: #d97736;
+  color: var(--color-primary);
 }
 
 .style-floating-cards .size-pill-exchange .pill-icon-box {
@@ -671,7 +671,7 @@
 }
 
 .style-modern-chips .size-pill-diaper .pill-icon-box {
-  color: #d97736;
+  color: var(--color-primary);
 }
 
 .style-modern-chips .size-pill-exchange .pill-icon-box {
@@ -772,7 +772,7 @@
 
 [data-theme="dark"] .style-glass-pills .size-pill-diaper .pill-icon-box {
   background: rgba(244, 162, 97, 0.18);
-  color: #f4a261;
+  color: var(--color-primary);
   border-color: rgba(244, 162, 97, 0.35);
 }
 

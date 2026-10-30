@@ -175,7 +175,7 @@ body.cursor-hover .custom-cursor-dot {
   align-items: center;
   gap: 0.5rem;
   background: rgba(217, 119, 54, 0.1);
-  color: var(--color-terracotta, #d97736);
+  color: var(--color-primary);
   padding: 0.45rem 1rem;
   border-radius: var(--radius-full);
   font-size: 0.78rem;
@@ -188,7 +188,7 @@ body.cursor-hover .custom-cursor-dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: var(--color-terracotta, #d97736);
+  background-color: var(--color-primary);
   box-shadow: 0 0 0 0 rgba(217, 119, 54, 0.7);
   animation: pulseBeacon 2s infinite cubic-bezier(0.66, 0, 0, 1);
 }
@@ -370,7 +370,7 @@ body.cursor-hover .custom-cursor-dot {
 }
 
 .floating-pill-badge i {
-  color: #f59e0b;
+  color: var(--color-primary);
 }
 
 @keyframes floatGentle {
@@ -738,12 +738,12 @@ body.cursor-hover .custom-cursor-dot {
 
 .fav-wishlist-btn:hover {
   transform: scale(1.1);
-  color: #e63946;
+  color: var(--color-primary);
 }
 
 .fav-wishlist-btn.active i {
   font-weight: 900;
-  color: #e63946;
+  color: var(--color-primary);
 }
 
 .fav-quick-add-btn {
@@ -1024,7 +1024,7 @@ body.cursor-hover .custom-cursor-dot {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  color: #f7d08a; 
+  color: var(--color-secondary); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1065,8 +1065,8 @@ body.cursor-hover .custom-cursor-dot {
 }
 
 .sanctuary-actions .btn-primary {
-  background: #d97736;
-  border-color: #d97736;
+  background: var(--color-primary);
+  border-color: var(--color-primary);
   color: #ffffff;
   padding: 0.95rem 2.2rem;
   font-size: 1.05rem;
@@ -1074,8 +1074,8 @@ body.cursor-hover .custom-cursor-dot {
 }
 
 .sanctuary-actions .btn-primary:hover {
-  background: #bf6326;
-  border-color: #bf6326;
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
   transform: translateY(-2px);
   box-shadow: 0 12px 28px rgba(217, 119, 54, 0.45);
 }
@@ -1130,7 +1130,7 @@ body.cursor-hover .custom-cursor-dot {
   display: flex;
   align-items: center;
   gap: 0.35rem;
-  color: #f59e0b;
+  color: var(--color-primary);
   font-size: 1.05rem;
   margin-bottom: 1.25rem;
 }
@@ -1421,7 +1421,7 @@ body.cursor-hover .custom-cursor-dot {
 .curtain-progress-bar {
   width: 0%;
   height: 100%;
-  background: linear-gradient(90deg, #b8860b, #fae5a7);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
   border-radius: 999px;
   animation: curtainProgress 1.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
@@ -1487,7 +1487,7 @@ body.cursor-hover .custom-cursor-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--color-terracotta, #d97736);
+  background: var(--color-primary);
   box-shadow: 0 0 8px rgba(217, 119, 54, 0.8);
 }
 
@@ -1613,7 +1613,7 @@ body.cursor-hover .custom-cursor-dot {
 
 [data-theme="dark"] .hero-live-indicator {
   background: rgba(217, 119, 54, 0.18);
-  color: #f7a268;
+  color: var(--color-primary);
   border-color: rgba(247, 162, 104, 0.35);
 }
 

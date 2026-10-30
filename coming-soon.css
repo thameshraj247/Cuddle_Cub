@@ -119,7 +119,7 @@ body.coming-soon-body {
   width: 46px;
   height: 46px;
   font-size: 1.15rem;
-  color: #e07a5f;
+  color: var(--color-primary-light);
   animation: floatSlow 6.9s infinite ease-in-out -1.5s;
 }
 

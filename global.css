@@ -9,9 +9,9 @@
   --color-secondary-dark: #eedec8;
   --color-secondary-light: #fdfcf9;
   
-  --color-accent: #d97736; 
-  --color-accent-soft: #fbf0ea;
-  --color-gold: #c9933b;
+  --color-accent: #1e4635; 
+  --color-accent-soft: #e8f3ed;
+  --color-gold: #2d6a4f;
 
   --bg-page: #fdfbf7;
   --bg-surface: #ffffff;
@@ -723,7 +723,7 @@ section[id],
   position: absolute;
   top: -6px;
   right: -6px;
-  background: #d97736;
+  background: var(--color-primary);
   color: #ffffff;
   font-size: 0.72rem;
   font-weight: 800;
@@ -871,7 +871,7 @@ section[id],
 }
 
 .btn-accent {
-  background: linear-gradient(135deg, #d97736 0%, #c9933b 100%);
+  background: linear-gradient(135deg, #1e4635 0%, #2d6a4f 100%);
   color: #ffffff;
   box-shadow: 0 4px 14px rgba(217, 119, 54, 0.25);
 }
@@ -1398,7 +1398,7 @@ section[id],
 }
 
 .cta-bg-inner h2 em {
-  color: #f7d08a;
+  color: var(--color-secondary);
   font-style: italic;
 }
 
@@ -1612,9 +1612,9 @@ section[id],
   --color-secondary-dark: #121c17;
   --color-secondary-light: #22322a;
 
-  --color-accent: #e08b53;
-  --color-accent-soft: rgba(224, 139, 83, 0.18);
-  --color-gold: #e5b364;
+  --color-accent: #74c69d;
+  --color-accent-soft: rgba(82, 183, 136, 0.15);
+  --color-gold: #74c69d;
 
   --bg-page: #0f1613;
   --bg-surface: #18221d;
@@ -1750,11 +1750,11 @@ section[id],
 }
 
 [data-theme="dark"] .theme-icon-btn {
-  color: #f59e0b;
+  color: #74c69d;
 }
 
 [data-theme="dark"] .header-cart-badge {
-  background: #e28743;
+  background: #52b788;
   border-color: #121e17;
 }
 

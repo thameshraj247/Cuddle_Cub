@@ -259,7 +259,7 @@
 
 .lookbook-overlay span {
   font-size: 0.85rem;
-  color: #f7d08a;
+  color: var(--color-secondary);
   font-weight: 600;
 }
 
@@ -674,7 +674,7 @@
   align-items: center;
   gap: 0.55rem;
   background: rgba(217, 119, 54, 0.14);
-  color: #c05e1b;
+  color: var(--color-primary);
   border: 1px solid rgba(217, 119, 54, 0.3);
   font-size: 0.86rem;
   font-weight: 700;
@@ -774,7 +774,7 @@
 .tracker-progress {
   width: 62.4%;
   height: 100%;
-  background: linear-gradient(90deg, var(--color-primary) 0%, #d97736 100%);
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
   border-radius: var(--radius-full);
   animation: growBar 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
@@ -889,8 +889,8 @@
 
 [data-theme="dark"] .aurora-badge-tag {
   background: rgba(217, 119, 54, 0.22);
-  color: #f7d08a;
-  border-color: #d97736;
+  color: var(--color-secondary);
+  border-color: var(--color-primary);
 }
 
 [data-theme="dark"] .aurora-stat-huge {

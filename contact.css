@@ -307,7 +307,7 @@
 
 .lookbook-overlay span {
   font-size: 0.85rem;
-  color: #f7d08a;
+  color: var(--color-secondary);
   font-weight: 600;
 }
 
