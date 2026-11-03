@@ -994,10 +994,33 @@
   border-radius: var(--radius-full);
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--color-secondary);
+  color: #ffffff;
   border: 1px solid rgba(247, 208, 138, 0.4);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+[data-theme="dark"] #section-occasions .category-badge-chip {
+  background: rgba(10, 24, 18, 0.95);
+  color: #f7f2e7 !important;
+  border-color: rgba(116, 198, 157, 0.45);
+}
+
+[data-theme="dark"] #section-occasions .category-badge-chip i {
+  color: #74c69d !important;
+}
+
+[data-theme="dark"] #section-occasions .category-body h3,
+[data-theme="dark"] .occasions-section .occasion-title {
+  color: #f0f5f2 !important;
+}
+
+[data-theme="dark"] #section-occasions .category-body p,
+[data-theme="dark"] .occasions-section .occasion-desc {
+  color: #c2d4cb !important;
 }
 
 #section-occasions .category-body {
