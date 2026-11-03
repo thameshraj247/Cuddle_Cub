@@ -224,6 +224,9 @@
   border-radius: var(--radius-full);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
 .badge-tag.tag-new { background: var(--color-primary); color: #fff; }
@@ -814,6 +817,9 @@
   padding: 0.4rem 0.85rem;
   border-radius: var(--radius-full);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
 .promise-card-body {
@@ -1103,13 +1109,15 @@ main .cta-split-content {
 }
 
 .inspector-badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--color-primary);
-  background: rgba(217, 119, 54, 0.12);
+  background: var(--color-primary-subtle);
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
   margin-bottom: 0.65rem;

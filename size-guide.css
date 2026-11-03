@@ -246,6 +246,9 @@
   font-weight: 700;
   padding: 0.35rem 0.9rem;
   border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
 .category-body {

@@ -354,6 +354,9 @@
   font-weight: 700;
   padding: 0.35rem 0.9rem;
   border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
 .category-body {
@@ -505,6 +508,9 @@
   border-radius: var(--radius-full);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
 .badge-tag.tag-festive { background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light)); color: var(--color-secondary); }

@@ -353,6 +353,9 @@
   border-radius: 999px;
   background: var(--color-primary);
   color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .pill-title {
@@ -704,6 +707,9 @@
   font-size: 0.85rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.75);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
 .section-arrivals {
