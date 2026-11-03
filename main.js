@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  initLucideIcons();
   initLuxuryCursor();
   initDirection();
   initTheme();
@@ -7,6 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
   initWishlist();
   initScrollCounters();
 });
+
+function initLucideIcons() {
+  if (window.lucide && typeof window.lucide.createIcons === 'function') {
+    window.lucide.createIcons();
+  }
+}
 
 function initDirection() {
   const dirButtons = document.querySelectorAll('.dir-toggle-btn');
