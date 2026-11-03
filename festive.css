@@ -1051,6 +1051,11 @@
   padding: 1.5rem 0 !important;
 }
 
+[data-theme="dark"] .festive-cta-banner .cta-bg-inner h2 em,
+[data-theme="dark"] .festive-cta-banner .cta-bg-inner h2 span {
+  color: #74c69d !important;
+}
+
 [data-theme="dark"] .festive-hero-scrim {
   background: linear-gradient(
     90deg,
